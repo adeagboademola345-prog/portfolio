@@ -82,15 +82,6 @@
     window.addEventListener('scroll', kick, { passive: true });
   }
 
-  /* Project rail arrows */
-  const rail = doc.getElementById('rail');
-  const step = () => {
-    const c = rail.querySelector('.card');
-    return c ? c.getBoundingClientRect().width + 18 : rail.clientWidth * 0.8;
-  };
-  doc.getElementById('workPrev').addEventListener('click', () => rail.scrollBy({ left: -step(), behavior: 'smooth' }));
-  doc.getElementById('workNext').addEventListener('click', () => rail.scrollBy({ left: step(), behavior: 'smooth' }));
-
   /* Copy email */
   const copyBtn = doc.getElementById('copyEmail');
   copyBtn.addEventListener('click', async () => {
