@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vault — A digital bank for everyday payments · Ademola Adeagbo</title>
+  <meta name="description" content="Vault is a concept for a Nigerian digital bank: send, pay bills, save, spend and bet with limits. A concept case study in structure, flows, UI, a design system, prototyping and developer handoff by Ademola Adeagbo.">
+  <meta name="author" content="Ademola Peter Adeagbo">
+  <meta name="theme-color" content="#f4f6ef">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://www.ademolaadeagbo.com.ng/work/vault">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ademolaadeagbo.com.ng/work/vault">
+  <meta property="og:title" content="Vault — A digital bank for everyday payments">
+  <meta property="og:description" content="Send, pay bills, save, spend and bet with limits. A concept case study in structure, flows, UI, a design system, prototyping and developer handoff.">
+  <meta property="og:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/vault/vault-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Ademola Peter Adeagbo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vault — A digital bank for everyday payments">
+  <meta name="twitter:description" content="Send, pay bills, save, spend and bet with limits. A concept case study in structure, flows, UI, a design system, prototyping and developer handoff.">
+  <meta name="twitter:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/vault/vault-og.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css?v=11">
+  <link rel="stylesheet" href="../work.css">
+  <link rel="stylesheet" href="vault.css?v=2">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="vt-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="bar" id="bar">
+    <div class="bar-in">
+      <a class="bar-name" href="../index.html">Ademola Adeagbo</a>
+      <nav class="bar-nav" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="bar-right">
+        <span class="avail mono"><i aria-hidden="true"></i>Open for work</span>
+        <a class="btn btn-ink btn-sm" href="../assets/Ademola-Adeagbo-CV.pdf" download>Resume <span aria-hidden="true">↓</span></a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+          <span class="mb-label">Menu</span>
+          <span class="mb-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="bar-progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <div class="drawer" id="drawer" hidden>
+    <nav aria-label="Mobile">
+      <a href="../index.html#work"><span class="mono">01</span>Work</a>
+      <a href="../index.html#about"><span class="mono">02</span>About</a>
+      <a href="../index.html#services"><span class="mono">03</span>Services</a>
+      <a href="../index.html#contact"><span class="mono">04</span>Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a class="btn btn-yellow" href="../assets/Ademola-Adeagbo-CV.pdf" download>Download Resume <span aria-hidden="true">↓</span></a>
+      <p class="mono">adeagboademola345@gmail.com</p>
+    </div>
+  </div>
+
+  <main id="main" class="vt-main">
+
+    <!-- ============ COVER ============ -->
+    <section class="vt-cover" aria-labelledby="vt-title">
+      <div class="wrap vt-cover-in">
+        <div class="vt-cover-copy">
+          <p class="vt-kicker">Case study</p>
+          <h1 class="vt-wordmark" id="vt-title">Vault<span aria-hidden="true">.</span></h1>
+          <p class="vt-tagline">A digital bank for everyday payments in Nigeria: send, pay bills, save, spend, and bet with limits.</p>
+
+          <dl class="vt-facts">
+            <div><dt>Role</dt><dd>UI/UX designer (solo)</dd></div>
+            <div><dt>Timeline</dt><dd>November 2026</dd></div>
+            <div><dt>Platform</dt><dd>iOS · 390 × 844</dd></div>
+            <div><dt>Scope</dt><dd>UX, UI, design system, prototype, dev handoff</dd></div>
+            <div><dt>Type</dt><dd>Concept project</dd></div>
+          </dl>
+
+          <nav class="vt-jumps" aria-label="Case study sections">
+            <a href="#overview">Overview</a>
+            <a href="#flows">Flows</a>
+            <a href="#testing">Testing</a>
+            <a href="#prototype">Prototype</a>
+          </nav>
+        </div>
+
+        <figure class="vt-cover-media">
+          <img src="../assets/projects/vault/man.webp" width="900" height="600" alt="A man photographed for the Vault concept" fetchpriority="high" decoding="async">
+          <figcaption class="vt-cover-caption">Vault · Concept case study</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ FACTS STRIP ============ -->
+    <div class="vt-strip">
+      <div class="wrap vt-strip-in">
+        <div>
+          <p class="vt-strip-big">451</p>
+          <p class="vt-strip-cap">screens in the prototype</p>
+        </div>
+        <div>
+          <p class="vt-strip-big">1,940</p>
+          <p class="vt-strip-cap">prototype links between them</p>
+        </div>
+        <div>
+          <p class="vt-strip-big">10</p>
+          <p class="vt-strip-cap">prototype flows</p>
+        </div>
+        <div>
+          <p class="vt-strip-big">0</p>
+          <p class="vt-strip-cap">dead taps in the prototype</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ 01 OVERVIEW ============ -->
+    <section class="vt-sec vt-sec--white" id="overview" aria-labelledby="overview-h">
+      <div class="wrap">
+        <div class="vt-split">
+          <header class="vt-head">
+            <p class="vt-kicker">01 · Overview</p>
+            <h2 class="vt-h2" id="overview-h">One account for money in, money out and money kept</h2>
+          </header>
+          <div class="vt-prose">
+            <p>Vault is a concept for a Nigerian digital bank in the style of the apps people already use for daily payments. I designed it end to end: structure, every flow and state, a design system with interactive components, a linked prototype of 451 screens and developer handoff.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 PROBLEM ============ -->
+    <section class="vt-sec" id="problem" aria-labelledby="problem-h">
+      <div class="wrap">
+        <div class="vt-split">
+          <header class="vt-head">
+            <p class="vt-kicker">02 · Problem</p>
+            <h2 class="vt-h2" id="problem-h">Where money apps lose trust</h2>
+          </header>
+          <div class="vt-prose">
+            <p>Daily payment apps are fast when everything works. Trust breaks in the other moments: a transfer stuck on pending, a wrong account name, a failed bill payment with no token, a locked account with no clear way back. Betting top-ups also sit next to rent money with nothing to slow you down.</p>
+            <p class="vt-note">This is a concept project. These are my starting assumptions, to be checked in the usability tests below.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 GOALS ============ -->
+    <section class="vt-sec vt-sec--white" id="goals" aria-labelledby="goals-h">
+      <div class="wrap">
+        <header class="vt-head vt-head--wide">
+          <p class="vt-kicker">03 · Goals</p>
+          <h2 class="vt-h2" id="goals-h">Goals</h2>
+        </header>
+        <div class="vt-goals">
+          <article class="vt-card vt-goal">
+            <span class="vt-goal-n">01</span>
+            <h3>Confirm first</h3>
+            <p>Show the account or meter name before any money moves.</p>
+          </article>
+          <article class="vt-card vt-goal">
+            <span class="vt-goal-n">02</span>
+            <h3>Explain failures</h3>
+            <p>Every error says what happened and what to do next.</p>
+          </article>
+          <article class="vt-card vt-goal">
+            <span class="vt-goal-n">03</span>
+            <h3>Stay in control</h3>
+            <p>Freeze, limits, pause and devices are one tap away.</p>
+          </article>
+          <article class="vt-card vt-goal">
+            <span class="vt-goal-n">04</span>
+            <h3>Fast for daily use</h3>
+            <p>Send, bills and add money straight from Home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 AUDIENCE ============ -->
+    <section class="vt-sec" id="audience" aria-labelledby="audience-h">
+      <div class="wrap">
+        <header class="vt-head vt-head--wide">
+          <p class="vt-kicker">04 · Audience</p>
+          <h2 class="vt-h2" id="audience-h">Who I designed for</h2>
+        </header>
+        <div class="vt-audience">
+          <article class="vt-aud">
+            <img src="../assets/projects/vault/market.webp" width="900" height="506" alt="A trader at a market, photographed for Vault" loading="lazy" decoding="async">
+            <div>
+              <h3>Traders</h3>
+              <ul class="vt-bullets">
+                <li>Get paid by transfer or QR</li>
+                <li>Need to see money land at once</li>
+                <li>Share receipts with customers</li>
+              </ul>
+            </div>
+          </article>
+          <article class="vt-aud">
+            <img src="../assets/projects/vault/friends.webp" width="900" height="600" alt="Friends together, photographed for Vault" loading="lazy" decoding="async">
+            <div>
+              <h3>Students and young workers</h3>
+              <ul class="vt-bullets">
+                <li>Split bills and send small amounts</li>
+                <li>Airtime and data every week</li>
+                <li>Some fund betting wallets</li>
+              </ul>
+            </div>
+          </article>
+          <article class="vt-aud">
+            <img src="../assets/projects/vault/woman.webp" width="507" height="900" alt="A woman shopping, photographed for Vault" loading="lazy" decoding="async">
+            <div>
+              <h3>Online shoppers</h3>
+              <ul class="vt-bullets">
+                <li>Pay with a virtual card</li>
+                <li>Want to freeze a card fast</li>
+                <li>Save towards a target</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 STRUCTURE ============ -->
+    <section class="vt-sec vt-sec--white" id="structure" aria-labelledby="structure-h">
+      <div class="wrap">
+        <header class="vt-head vt-head--wide">
+          <p class="vt-kicker">05 · Structure</p>
+          <h2 class="vt-h2" id="structure-h">Information architecture</h2>
+        </header>
+        <div class="vt-ia">
+          <div class="vt-ia-col">
+            <p class="vt-ia-top">Home</p>
+            <span class="vt-ia-stem" aria-hidden="true"></span>
+            <ul>
+              <li>Send</li>
+              <li>Add money</li>
+              <li>Bills and betting</li>
+              <li>History</li>
+              <li>Notifications</li>
+            </ul>
+          </div>
+          <div class="vt-ia-col">
+            <p class="vt-ia-top">Cards</p>
+            <span class="vt-ia-stem" aria-hidden="true"></span>
+            <ul>
+              <li>Card details</li>
+              <li>Freeze</li>
+              <li>Spending limit</li>
+              <li>Card PIN</li>
+              <li>Physical card</li>
+            </ul>
+          </div>
+          <div class="vt-ia-col">
+            <p class="vt-ia-top">Pay</p>
+            <span class="vt-ia-stem" aria-hidden="true"></span>
+            <ul>
+              <li>Scan QR</li>
+              <li>My code</li>
+              <li>Request money</li>
+            </ul>
+          </div>
+          <div class="vt-ia-col">
+            <p class="vt-ia-top">Insights</p>
+            <span class="vt-ia-stem" aria-hidden="true"></span>
+            <ul>
+              <li>Monthly spend</li>
+              <li>Categories</li>
+              <li>Statement</li>
+            </ul>
+          </div>
+          <div class="vt-ia-col">
+            <p class="vt-ia-top">Profile</p>
+            <span class="vt-ia-stem" aria-hidden="true"></span>
+            <ul>
+              <li>Limits and tiers</li>
+              <li>Savings and loans</li>
+              <li>Security</li>
+              <li>Help and chat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 FLOWS ============ -->
+    <section class="vt-sec" id="flows" aria-labelledby="flows-h">
+      <div class="wrap">
+        <header class="vt-head vt-head--wide">
+          <p class="vt-kicker">06 · Flows</p>
+          <h2 class="vt-h2" id="flows-h">10 prototype flows, every tap linked</h2>
+        </header>
+        <ol class="vt-flows">
+          <li class="vt-flow"><span class="vt-flow-n">1</span>Open an account</li>
+          <li class="vt-flow"><span class="vt-flow-n">2</span>Log in, wrong passcode, locked</li>
+          <li class="vt-flow"><span class="vt-flow-n">3</span>Send to a bank</li>
+          <li class="vt-flow"><span class="vt-flow-n">4</span>Pay bills</li>
+          <li class="vt-flow"><span class="vt-flow-n">5</span>Betting and limits</li>
+          <li class="vt-flow"><span class="vt-flow-n">6</span>Transactions and disputes</li>
+          <li class="vt-flow"><span class="vt-flow-n">7</span>Cards</li>
+          <li class="vt-flow"><span class="vt-flow-n">8</span>Home (everything)</li>
+          <li class="vt-flow"><span class="vt-flow-n">9</span>Offline</li>
+          <li class="vt-flow"><span class="vt-flow-n">10</span>Loan · not eligible</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 07 DECISIONS ============ -->
+    <section class="vt-sec vt-sec--white" id="decisions" aria-labelledby="decisions-h">
+      <div class="wrap">
+        <header class="vt-head vt-head--wide">
+          <p class="vt-kicker">07 · Decisions</p>
+          <h2 class="vt-h2" id="decisions-h">Design decisions</h2>
+        </header>
+        <div class="vt-decisions">
+          <article class="vt-decision">
+            <h3>Name before money</h3>
+            <p>Account, meter, decoder and betting IDs are checked and the name is shown before the amount step.</p>
+          </article>
+          <article class="vt-decision">
+            <h3>Errors that say what to do</h3>
+            <p>“Your daily limit is ₦50,000 on Tier 1” with an Upgrade link, instead of “Transaction failed”.</p>
+          </article>
+          <article class="vt-decision">
+            <h3>Pending is its own state</h3>
+            <p>Processing, pending, failed and successful each get a screen, and a pending transfer can be reported from its receipt.</p>
+          </article>
+          <article class="vt-decision">
+            <h3>Real photos</h3>
+            <p>Real people paying, trading and shopping, so it feels Nigerian and everyday, not stock-template.</p>
+          </article>
+          <article class="vt-decision">
+            <h3>One bright colour</h3>
+            <p>Lime marks the main action and the balance card. Everything else stays deep green, cream and white.</p>
+          </article>
+          <article class="vt-decision">
+            <h3>Hover and press built in</h3>
+            <p>Buttons are a component set with default, hover, pressed, disabled and loading, so the prototype responds like an app.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 BETTING ============ -->
+    <section class="vt-sec vt-betting" id="betting" aria-labelledby="betting-h">
+      <div class="wrap">
+        <header class="vt-head vt-head--wide">
+          <p class="vt-kicker">08 · Betting</p>
+          <h2 class="vt-h2" id="betting-h">Betting, designed with brakes</h2>
+        </header>
+        <p class="vt-betting-text">Funding a betting wallet is one of the most common payments in Nigerian money apps. Instead of leaving it out, I designed it with controls: a daily limit, a pause that can’t be undone early, a clear block screen and support links.</p>
+        <ul class="vt-betting-list">
+          <li>Raising a limit waits 24 hours</li>
+          <li>Pause for 24 hours, 7 days or 30 days</li>
+          <li>Over-limit and blocked states explain why</li>
+          <li>Bet responsibly page with help links</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 09 DESIGN SYSTEM ============ -->
+    <section class="vt-sec" id="system" aria-labelledby="system-h">
+      <div class="wrap">
+        <header class="vt-head vt-head--wide">
+          <p class="vt-kicker">09 · Design system</p>
+          <h2 class="vt-h2" id="system-h">Deep green, lime and one typeface</h2>
+        </header>
+
+        <ul class="vt-swatches">
+          <li>
+            <span class="vt-swatch" style="--sw:#0e2a20"></span>
+            <span class="vt-swatch-name">Forest</span>
+            <span class="vt-swatch-hex">#0E2A20</span>
+          </li>
+          <li>
+            <span class="vt-swatch" style="--sw:#c8f169"></span>
+            <span class="vt-swatch-name">Lime</span>
+            <span class="vt-swatch-hex">#C8F169</span>
+          </li>
+          <li>
+            <span class="vt-swatch vt-swatch--light" style="--sw:#f4f6ef"></span>
+            <span class="vt-swatch-name">Cream</span>
+            <span class="vt-swatch-hex">#F4F6EF</span>
+          </li>
+          <li>
+            <span class="vt-swatch" style="--sw:#1f9d55"></span>
+            <span class="vt-swatch-name">Success</span>
+            <span class="vt-swatch-hex">#1F9D55</span>
+          </li>
+          <li>
+            <span class="vt-swatch" style="--sw:#c0362c"></span>
+            <span class="vt-swatch-name">Error</span>
+            <span class="vt-swatch-hex">#C0362C</span>
+          </li>
+        </ul>
+
+        <div class="vt-type">
+          <div class="vt-type-row">
+            <p class="vt-type-sample">Plus Jakarta Sans</p>
+            <p class="vt-type-cap">ExtraBold for balances and headings · SemiBold for buttons · Regular for reading</p>
+          </div>
+          <div class="vt-type-row">
+            <p class="vt-type-balance">₦248,350.50</p>
+            <p class="vt-type-balance-cap">Balance · ExtraBold</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 HANDOFF ============ -->
+    <section class="vt-sec vt-sec--white" id="handoff" aria-labelledby="handoff-h">
+      <div class="wrap">
+        <div class="vt-handoff">
+          <header class="vt-head">
+            <p class="vt-kicker">10 · Handoff</p>
+            <h2 class="vt-h2" id="handoff-h">Ready for developers</h2>
+          </header>
+          <div class="vt-prose">
+            <p>The Dev Handoff page specifies 15 screens with 39 field-level cards: element, required, input type, validation, every error message and edge cases. Components use Property=Value variants for Dev Mode, and colours and text are saved as styles.</p>
+          </div>
+          <ul class="vt-bullets vt-bullets--strong">
+            <li>15 screens specified</li>
+            <li>39 spec cards</li>
+            <li>Error messages written out in full</li>
+            <li>Buttons, chips and radios as interactive components</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 11 TESTING ============ -->
+    <section class="vt-sec" id="testing" aria-labelledby="testing-h">
+      <div class="wrap">
+        <div class="vt-split">
+          <header class="vt-head">
+            <p class="vt-kicker">11 · Testing</p>
+            <h2 class="vt-h2" id="testing-h">Usability test plan</h2>
+          </header>
+          <div class="vt-prose">
+            <ul class="vt-bullets vt-bullets--strong">
+              <li>8 adults in Lagos: 4 daily users of digital bank apps, 4 who mostly use a traditional bank app · 30 minutes each, think-aloud</li>
+              <li>Tasks: open an account, send ₦25,000 after a wrong PIN, buy electricity, report a pending transfer, set a lower betting limit, freeze a card</li>
+              <li>Measures: task success, time on task, errors, and a trust rating from 1 to 7</li>
+            </ul>
+            <div class="vt-status">
+              <svg class="vt-status-ic" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="9.25" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                <path d="M12 10.5v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <circle cx="12" cy="7.6" r="1" fill="currentColor"></circle>
+              </svg>
+              <p>Status: planned. Results will be added after real sessions. No numbers are shown before then.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 12 NEXT ============ -->
+    <section class="vt-sec vt-sec--white" id="next" aria-labelledby="next-h">
+      <div class="wrap">
+        <div class="vt-split">
+          <header class="vt-head">
+            <p class="vt-kicker">12 · Next</p>
+            <h2 class="vt-h2" id="next-h">What I learned and what’s next</h2>
+          </header>
+          <div class="vt-prose">
+            <ul class="vt-bullets vt-bullets--strong">
+              <li>Designing the failure screens first (pending, wrong name, locked) shaped the happy path more than the other way round.</li>
+              <li>Building buttons as real components with hover and press states made the prototype behave like an app, not a slideshow.</li>
+              <li>Next: run the tests, then add Android, dark mode and a business account.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROTOTYPE ============ -->
+    <section class="vt-cta" id="prototype" aria-labelledby="proto-h">
+      <div class="wrap">
+        <p class="vt-kicker">Prototype</p>
+        <h2 class="vt-h2" id="proto-h">Explore the prototype</h2>
+        <p class="vt-cta-text">All 10 flows are linked in Figma, from opening an account to a loan that isn’t eligible. 451 screens, 1,940 links, no dead taps.</p>
+        <div class="vt-proto-actions">
+          <a class="vt-proto-btn" href="https://www.figma.com/embed?embed_host=www.ademolaadeagbo.com.ng&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlWrDfgiUsLeq1vQhb3gRGD%2FVault%3Fstarting-point-node-id%3D33%253A29954%26page-id%3D33%253A29111%26scaling%3Dmin-zoom%26content-scaling%3Dfixed" target="_blank" rel="noopener">
+            Case study flow <span aria-hidden="true">↗</span>
+          </a>
+          <a class="vt-proto-btn vt-proto-btn--ghost" href="https://www.figma.com/embed?embed_host=www.ademolaadeagbo.com.ng&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlWrDfgiUsLeq1vQhb3gRGD%2FVault%3Fstarting-point-node-id%3D22%253A254%26page-id%3D22%253A10%26scaling%3Dscale-down%26content-scaling%3Dresponsive" target="_blank" rel="noopener">
+            App prototype <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="vt-proto-url">
+          <a href="https://www.figma.com/embed?embed_host=www.ademolaadeagbo.com.ng&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlWrDfgiUsLeq1vQhb3gRGD%2FVault%3Fstarting-point-node-id%3D33%253A29954%26page-id%3D33%253A29111%26scaling%3Dmin-zoom%26content-scaling%3Dfixed" target="_blank" rel="noopener">https://www.figma.com/proto/lWrDfgiUsLeq1vQhb3gRGD/Vault?starting-point-node-id=33%3A29954&amp;page-id=33%3A29111&amp;scaling=min-zoom&amp;content-scaling=fixed</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <nav class="pj-pager" aria-label="Project navigation">
+        <a href="studyline"><span class="mono">Previous</span><strong>← Studyline</strong></a>
+        <a href="rollys"><span class="mono">Next project</span><strong>Rolly's Collection →</strong></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-row mono">
+        <span>© <span id="year">2026</span> Ademola Peter Adeagbo</span>
+        <span>Working globally</span>
+        <a href="../assets/Ademola-Adeagbo-CV.pdf" download>Resume (PDF)</a>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="foot-name" aria-hidden="true">
+      <span>Ademola</span><span>Adeagbo</span>
+    </div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+/* ============================================================
+   Aura Archive — project treatment
+   Sits on top of work.css. Only `.aura-*` rules live here.
+   ============================================================ */
+
+.aura-page {
+  --aura-gold: #9c7c3c;
+  --aura-gold-light: #c9ac6d;
+  --aura-deep: #2a2118;
+  --aura-cream: #fbf7ef;
+  --aura-sand: #e9dfcc;
+  --aura-taupe: #6b5e4a;
+}
+
+/* The app's editorial voice, used sparingly. */
+.aura-page .pj-title em {
+  font-family: "Bodoni Moda", Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  color: var(--aura-gold);
+  letter-spacing: -.035em;
+}
+
+.aura-page .kicker { color: var(--aura-gold); }
+
+.aura-ticket {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 22px;
+  margin-top: clamp(26px, 3vw, 40px);
+  padding-block: 11px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  color: var(--ink-3);
+  font-size: 9.5px;
+}
+.aura-ticket b { color: var(--ink); font-weight: 500; }
+.aura-ticket .dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--aura-gold);
+}
+
+/* ---------- dark room ---------- */
+
+.aura-band {
+  position: relative;
+  overflow: hidden;
+  margin-block: clamp(48px, 7vw, 100px);
+  background: var(--aura-deep);
+  color: var(--aura-cream);
+}
+.aura-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(58% 80% at 78% 18%, rgba(156, 124, 60, .26), transparent 68%);
+  pointer-events: none;
+}
+.aura-band .wrap {
+  position: relative;
+  padding-block: clamp(38px, 5.4vw, 78px);
+}
+.aura-band .mono { color: var(--aura-gold-light); }
+.aura-band-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr);
+  gap: clamp(30px, 5vw, 80px);
+  align-items: center;
+}
+.aura-band h2 {
+  font-family: "Bodoni Moda", Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4.4vw, 3.9rem);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: -.035em;
+  max-width: 17ch;
+  text-wrap: balance;
+}
+.aura-band h2 em { font-style: italic; color: var(--aura-gold-light); }
+.aura-band p {
+  margin-top: 20px;
+  max-width: 44ch;
+  color: rgba(251, 247, 239, .72);
+  font-size: 1rem;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+.aura-band .arrow-link {
+  color: var(--aura-cream);
+  border-color: rgba(251, 247, 239, .3);
+  margin-top: 26px;
+}
+.aura-band .arrow-link:hover { color: var(--aura-gold-light); }
+
+.aura-look {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(10px, 1.6vw, 20px);
+  align-items: start;
+}
+.aura-look figure { margin: 0; }
+.aura-look figure:nth-child(2) { margin-top: clamp(22px, 4vw, 52px); }
+.aura-look img {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(251, 247, 239, .16);
+  border-radius: 14px;
+  box-shadow: 0 34px 70px -34px rgba(0, 0, 0, .7);
+}
+.aura-look figcaption {
+  margin-top: 9px;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(251, 247, 239, .46);
+}
+
+/* ---------- quote ---------- */
+
+.aura-page .pj-quote blockquote {
+  font-family: "Bodoni Moda", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: clamp(1.9rem, 4.8vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -.025em;
+  max-width: 22ch;
+}
+.aura-page .pj-quote cite { color: var(--aura-gold); }
+
+/* ---------- project note ---------- */
+
+.aura-note {
+  display: grid;
+  grid-template-columns: minmax(0, .3fr) minmax(0, .7fr);
+  gap: clamp(14px, 3vw, 44px);
+  margin-top: clamp(34px, 4.4vw, 60px);
+  padding: clamp(20px, 2.8vw, 32px);
+  border: 1px solid var(--rule);
+  background: var(--white);
+}
+.aura-note p:last-child {
+  color: var(--ink-2);
+  font-size: .94rem;
+  line-height: 1.65;
+  max-width: 64ch;
+}
+.aura-note .mono { color: var(--aura-gold); }
+
+/* ---------- open questions ---------- */
+
+.aura-questions {
+  display: grid;
+  gap: 0;
+  margin-top: clamp(22px, 3vw, 38px);
+  border-top: 1px solid var(--rule);
+}
+.aura-questions li {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  gap: 16px;
+  padding-block: 17px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.aura-questions .n {
+  padding-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: .08em;
+  color: var(--aura-gold);
+}
+.aura-questions b {
+  display: block;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+.aura-questions span {
+  display: block;
+  margin-top: 5px;
+  max-width: 66ch;
+  color: var(--ink-2);
+  font-size: .94rem;
+  line-height: 1.6;
+}
+
+/* ---------- type specimen ---------- */
+
+.aura-type-serif {
+  font-family: "Bodoni Moda", Georgia, "Times New Roman", serif !important;
+  font-weight: 400 !important;
+  letter-spacing: -.02em !important;
+}
+
+.aura-cta-actions {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 860px) {
+  .aura-band-grid { grid-template-columns: 1fr; }
+  .aura-look { max-width: 520px; }
+  .aura-note { grid-template-columns: 1fr; gap: 10px; }
+  .aura-questions { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .aura-ticket { gap: 6px 14px; }
+  .aura-questions li { grid-template-columns: 30px minmax(0, 1fr); gap: 10px; }
+}

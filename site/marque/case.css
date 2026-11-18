@@ -1,0 +1,764 @@
+/* ============================================================
+   Marque — case study
+   Copy, order, colour and type from the Figma case study frame
+   (390 × 16433). Mobile is the design; desktop reflows it.
+   ============================================================ */
+
+:root {
+  --ink: #121314;
+  --deep: #0a0a0b;
+  --paper: #ededea;
+  --paper-2: #f6f6f3;
+  --paper-3: #e6e6e3;
+  --card: #f2f2f0;
+  --muted: #55575a;
+  --muted-2: #bdbec2;
+  --light: #f2f2ef;
+  --light-3: #a9aaae;
+  --brass: #c4a56e;
+  --brass-deep: #a88650;
+  --positive: #3e7c5a;
+  --rule: rgba(18, 19, 20, .14);
+  --rule-dark: rgba(242, 242, 239, .18);
+  --serif: "Instrument Serif", "Times New Roman", Times, serif;
+  --sans: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body.cs {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body.cs img { display: block; max-width: 100%; height: auto; }
+:where(body.cs) :where(p, h1, h2, h3, ul, ol, figure, dl, dd) { margin: 0; }
+:where(body.cs) :where(ul, ol) { padding: 0; }
+
+.cs ::selection { background: var(--brass); color: var(--deep); }
+
+.cs :focus-visible {
+  outline: 2px solid var(--brass-deep);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.cs-skip {
+  position: absolute;
+  left: 16px;
+  top: -80px;
+  z-index: 200;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--light);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top .2s ease;
+}
+.cs-skip:focus { top: 16px; }
+
+.cs-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+/* ---------- shared type ---------- */
+
+.cs-eyebrow {
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cs-h2 {
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 9.23vw, 2.25rem);
+  line-height: 1.02;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+}
+
+.cs-h3 {
+  margin-top: 19px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 8.72vw, 2.125rem);
+  line-height: 1.03;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+}
+
+.cs-body {
+  margin-top: 20px;
+  max-width: 62ch;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+.cs-body + .cs-body { margin-top: 20px; }
+
+.cs-tag {
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- masthead ---------- */
+
+.cs-masthead { padding-top: 20px; }
+
+.cs-masthead .cs-eyebrow { color: var(--muted); }
+
+.cs-topline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.cs-name {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ink);
+}
+.cs-name:hover { color: var(--brass-deep); }
+.cs-kicker { color: var(--muted); font-weight: 400; }
+
+.cs-title {
+  margin-top: 8px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(4.75rem, 22.56vw, 5.5rem);
+  line-height: .88;
+  letter-spacing: -.02em;
+}
+
+.cs-deck {
+  margin-top: 26px;
+  max-width: 30ch;
+  font-size: 20px;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+.cs-meta {
+  margin-top: 64px;
+  display: grid;
+  gap: 40px;
+}
+.cs-meta dt {
+  font-size: 12px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.cs-meta dd {
+  margin-top: 2px;
+  font-size: 17px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+/* two screens, cropped by the dark card like the Figma frame */
+.cs-crash {
+  position: relative;
+  overflow: hidden;
+  margin-top: 118px;
+  aspect-ratio: 358 / 311.9;
+  border-radius: 20px;
+  background: var(--deep);
+}
+.cs-crash figure { margin: 0; }
+.cs-crash img {
+  position: absolute;
+  width: 45.5%;
+  max-width: none;
+  height: auto;
+  border-radius: 12px;
+}
+.cs-crash-a { top: 10.3%; left: 51.1%; }
+.cs-crash-b { top: 19.2%; left: 3.35%; }
+
+/* ---------- overview ---------- */
+
+.cs-overview { padding-block: 64px 92px; }
+
+.cs-overview-lead {
+  margin-top: 18px;
+  max-width: 34ch;
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -.005em;
+  text-wrap: pretty;
+}
+.cs-overview-body {
+  margin-top: 28px;
+  max-width: 40ch;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.cs-note {
+  margin-top: 28px;
+  border-radius: 16px;
+  background: var(--paper-2);
+  padding: 20px 22px 24px;
+}
+.cs-note h3 {
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 600;
+}
+.cs-note p {
+  margin-top: 10px;
+  max-width: 42ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+/* ---------- assumptions ---------- */
+
+.cs-assumptions { padding-block: 0 92px; }
+
+.cs-assumption-list {
+  list-style: none;
+  margin-top: 66px;
+  display: grid;
+  gap: 56px;
+}
+.cs-assumption-list h3 {
+  margin-top: 5px;
+  max-width: 30ch;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -.005em;
+  text-wrap: pretty;
+}
+.cs-assumption-list .cs-tag + h3 + .cs-tag { margin-top: 18px; }
+.cs-statement {
+  margin-top: 5px;
+  max-width: 40ch;
+  color: #2a2c2e;
+  font-size: 17px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+/* ---------- decision blocks ---------- */
+
+.cs-block { padding-block: 56px 56px; }
+.cs-block--tint { background: var(--paper-2); }
+
+.cs-block .cs-wrap > .cs-h3 { margin-top: 18px; }
+.cs-block .cs-body:first-of-type { margin-top: 20px; }
+
+/* phone pairs inside decisions */
+.cs-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 54px;
+  padding-inline: 8px;
+}
+.cs-pair figure { margin: 0; }
+.cs-pair img {
+  width: 100%;
+  filter: drop-shadow(0 22px 30px rgba(10, 10, 11, .14));
+}
+
+/* the full-height car page between decisions */
+.cs-bigphone {
+  width: 77%;
+  max-width: 340px;
+  margin: 56px auto 56px;
+}
+.cs-bigphone img {
+  width: 100%;
+  filter: drop-shadow(0 26px 38px rgba(10, 10, 11, .16));
+}
+
+/* rent screens sit on the paper between decisions */
+.cs-pair--rent {
+  margin: 56px auto;
+  max-width: 720px;
+}
+
+/* ---------- palette + cars ---------- */
+
+.cs-swatches {
+  list-style: none;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 20px;
+}
+.cs-swatches li { min-width: 0; }
+.cs-chip {
+  display: block;
+  height: 90px;
+  border-radius: 16px;
+  border: 1px solid rgba(18, 19, 20, .07);
+}
+.cs-chip--screen { background: var(--paper-3); }
+.cs-chip--card { background: var(--card); }
+.cs-chip--ink { background: var(--ink); }
+.cs-chip--brass { background: var(--brass-deep); }
+.cs-chip--positive { background: var(--positive); }
+.cs-swatches b {
+  display: block;
+  margin-top: 11px;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 600;
+}
+.cs-swatches em {
+  display: block;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+  font-style: normal;
+  letter-spacing: .01em;
+}
+
+.cs-cars {
+  margin-top: 56px;
+  display: grid;
+  gap: 16px;
+}
+.cs-cars figure { margin: 0; }
+.cs-cars img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 2px;
+  background: var(--paper-3);
+}
+
+/* ---------- dark splash ---------- */
+
+.cs-block--dark {
+  background: var(--deep);
+  color: var(--light);
+}
+.cs-block--dark .cs-tag { color: var(--brass); }
+.cs-block--dark .cs-h3 { color: var(--light); }
+.cs-block--dark .cs-body { color: var(--muted-2); }
+
+.cs-splash {
+  list-style: none;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 16px;
+}
+.cs-splash figure { margin: 0; }
+.cs-splash img {
+  width: 100%;
+  filter: drop-shadow(0 24px 34px rgba(0, 0, 0, .5));
+}
+.cs-splash figcaption {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 11px;
+  color: var(--muted-2);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.cs-splash figcaption b {
+  color: var(--light);
+  font-weight: 600;
+}
+
+/* ---------- rest of the app ---------- */
+
+.cs-rest { padding-block: 64px 64px; }
+
+.cs-screens {
+  list-style: none;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px 16px;
+}
+.cs-screens figure { margin: 0; }
+.cs-screens img {
+  width: 100%;
+  filter: drop-shadow(0 16px 22px rgba(10, 10, 11, .12));
+}
+.cs-screens figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* ---------- how I built it ---------- */
+
+.cs-built {
+  list-style: none;
+  margin-top: 62px;
+  display: grid;
+  gap: 44px;
+}
+.cs-built h3 {
+  margin-top: 5px;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 600;
+}
+.cs-built p:last-child {
+  margin-top: 6px;
+  max-width: 44ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+/* ---------- what I'd test ---------- */
+
+.cs-test { padding-block: 64px 64px; }
+
+.cs-questions {
+  list-style: none;
+  margin-top: 58px;
+  display: grid;
+  gap: 50px;
+}
+.cs-questions li {
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+}
+.cs-questions h3 {
+  max-width: 24ch;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -.005em;
+  text-wrap: pretty;
+}
+.cs-questions p {
+  margin-top: 6px;
+  max-width: 42ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+.cs-test-note {
+  margin-top: 54px;
+  max-width: 44ch;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+/* ---------- next ---------- */
+
+.cs-next {
+  background: var(--deep);
+  color: var(--light);
+  padding-block: 64px 56px;
+}
+.cs-next .cs-tag { color: var(--brass); }
+.cs-next-title {
+  margin-top: 14px;
+  max-width: 12ch;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.5rem, 11.28vw, 2.75rem);
+  line-height: .96;
+  letter-spacing: -.015em;
+  text-wrap: balance;
+}
+
+.cs-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  min-height: 52px;
+  padding: 11px 28px 13px;
+  border-radius: 999px;
+  background: var(--light);
+  color: var(--deep);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .25s ease, background .25s ease;
+}
+.cs-btn:hover { background: #fff; transform: translateY(-2px); }
+
+.cs-notes { margin-top: 98px; }
+.cs-notes h3 {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 600;
+}
+.cs-notes p {
+  margin-top: 8px;
+  max-width: 50ch;
+  color: var(--light-3);
+  font-size: 14px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.cs-home {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--light);
+  font-size: 14px;
+  line-height: 1.55;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(242, 242, 239, .38);
+  padding-bottom: 2px;
+}
+.cs-home:hover { color: var(--brass); border-color: var(--brass); }
+
+/* ============================================================
+   Wider screens
+   ============================================================ */
+
+@media (min-width: 700px) {
+  .cs-wrap { padding-inline: 32px; }
+
+  .cs-title { font-size: clamp(6rem, 17vw, 8.5rem); }
+  .cs-deck { font-size: 24px; max-width: 34ch; }
+
+  .cs-meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px 40px;
+    margin-top: 56px;
+    padding-top: 28px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .cs-crash {
+    margin-top: 64px;
+    aspect-ratio: 358 / 300;
+  }
+
+  .cs-overview { padding-block: 88px 104px; }
+  .cs-overview-lead { font-size: 28px; max-width: 32ch; }
+  .cs-overview-body { font-size: 19px; max-width: 52ch; }
+  .cs-note {
+    display: grid;
+    grid-template-columns: minmax(0, .6fr) minmax(0, 1.4fr);
+    gap: 32px;
+    padding: 28px 32px 32px;
+  }
+  .cs-note p { margin-top: 0; max-width: 52ch; }
+
+  .cs-assumption-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+  .cs-assumption-list h3 { font-size: 21px; }
+
+  .cs-block { padding-block: 88px; }
+  .cs-block .cs-wrap { max-width: 980px; }
+  .cs-pair { max-width: 620px; margin-inline: auto; }
+  .cs-bigphone { max-width: 400px; margin-block: 72px; }
+  .cs-h3 { font-size: clamp(2.4rem, 4.6vw, 2.9rem); }
+  .cs-h2 { font-size: clamp(2.2rem, 4vw, 2.6rem); }
+
+  .cs-swatches { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .cs-cars { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .cs-cars img { aspect-ratio: 3 / 2; }
+
+  .cs-splash { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 24px; max-width: 900px; }
+
+  .cs-screens { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 24px; }
+
+  .cs-built { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+
+  .cs-questions { gap: 44px; max-width: 780px; }
+  .cs-next { padding-block: 96px 72px; }
+  .cs-notes { margin-top: 110px; display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 40px; }
+  .cs-notes p { margin-top: 0; }
+  .cs-home { grid-column: 2; margin-top: 0; justify-self: start; }
+}
+
+@media (min-width: 960px) {
+  .cs-wrap { padding-inline: 40px; }
+
+  .cs-page { position: relative; }
+
+  .cs-masthead { padding-top: 32px; }
+  .cs-topline { margin-top: 26px; }
+  .cs-title { font-size: clamp(7rem, 12vw, 10rem); }
+  .cs-deck { margin-top: 30px; font-size: 28px; }
+  .cs-meta { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+  .cs-crash {
+    margin-top: 72px;
+    aspect-ratio: 1120 / 420;
+    border-radius: 26px;
+  }
+  .cs-crash img { width: 30%; }
+  .cs-crash-a { top: 8%; left: 52%; }
+  .cs-crash-b { top: 15%; left: 20%; }
+
+  .cs-overview { padding-block: 112px 120px; }
+  .cs-overview .cs-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, .32fr) minmax(0, .68fr);
+    column-gap: 48px;
+    align-items: start;
+  }
+  .cs-overview .cs-eyebrow { grid-column: 1; }
+  .cs-overview-lead,
+  .cs-overview-body,
+  .cs-note { grid-column: 2; }
+  .cs-overview-lead { margin-top: 0; }
+  .cs-overview-body { margin-top: 24px; }
+  .cs-note { grid-template-columns: 1fr; gap: 12px; padding: 28px 32px 32px; }
+
+  .cs-assumptions .cs-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, .32fr) minmax(0, .68fr);
+    column-gap: 48px;
+  }
+  .cs-assumptions .cs-eyebrow { grid-column: 1; }
+  .cs-assumptions .cs-h2 { grid-column: 2; margin-top: 0; }
+  .cs-assumption-list { grid-column: 2; margin-top: 54px; grid-template-columns: 1fr; gap: 52px; }
+  .cs-assumption-list li {
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    column-gap: 32px;
+    align-items: start;
+    padding-top: 26px;
+    border-top: 1px solid var(--rule);
+  }
+  .cs-assumption-list li .cs-tag:first-child { grid-column: 1; }
+  .cs-assumption-list h3 { grid-column: 1; margin-top: 6px; max-width: none; font-size: 22px; }
+  .cs-assumption-list .cs-tag + h3 + .cs-tag { grid-column: 2; margin-top: 0; }
+  .cs-assumption-list .cs-statement { grid-column: 2; margin-top: 4px; max-width: 40ch; }
+
+  /* decisions with a phone pair: words left, screens right */
+  .cs-split .cs-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+    column-gap: clamp(40px, 6vw, 80px);
+    align-items: center;
+    max-width: 1120px;
+  }
+  .cs-split .cs-copy { grid-column: 1; }
+  .cs-split .cs-wrap > .cs-pair {
+    grid-column: 2;
+    margin: 0;
+    max-width: none;
+    padding-inline: 0;
+  }
+
+  /* text-only decisions: label and heading left, prose right */
+  .cs-block:not(.cs-block--dark):not(.cs-split):not(.cs-head) .cs-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+    column-gap: clamp(40px, 6vw, 80px);
+    align-items: start;
+    max-width: 1120px;
+  }
+  .cs-block:not(.cs-block--dark):not(.cs-split):not(.cs-head) .cs-wrap > .cs-tag,
+  .cs-block:not(.cs-block--dark):not(.cs-split):not(.cs-head) .cs-wrap > .cs-h3 { grid-column: 1; }
+  .cs-block:not(.cs-block--dark):not(.cs-split):not(.cs-head) .cs-wrap > .cs-body { grid-column: 2; }
+  .cs-block:not(.cs-block--dark):not(.cs-split):not(.cs-head) .cs-wrap > .cs-body:first-of-type { margin-top: 19px; }
+
+  /* palette, cars and build steps run full width under their heading */
+  .cs-block--tint .cs-wrap > .cs-swatches,
+  .cs-block--tint .cs-wrap > .cs-cars { grid-column: 1 / -1; }
+
+  .cs-block--tint .cs-wrap > .cs-swatches { grid-template-columns: repeat(5, minmax(0, 1fr)); margin-top: 56px; }
+  .cs-block--tint .cs-wrap > .cs-cars { margin-top: 24px; }
+
+  .cs-block--dark .cs-wrap { max-width: 1200px; }
+  .cs-block--dark .cs-body { max-width: 52ch; }
+  .cs-block--dark .cs-splash { max-width: none; }
+
+  .cs-head .cs-wrap { max-width: 1120px; }
+
+  .cs-bigphone { max-width: 430px; }
+
+  .cs-pair--rent { margin-block: 72px; max-width: 560px; }
+
+  .cs-rest { padding-block: 112px; }
+  .cs-rest .cs-wrap { display: grid; grid-template-columns: minmax(0, .34fr) minmax(0, .66fr); column-gap: 48px; }
+  .cs-rest .cs-eyebrow { grid-column: 1; }
+  .cs-rest .cs-h2 { grid-column: 2; margin-top: 0; font-size: clamp(2.4rem, 3.6vw, 3rem); }
+  .cs-rest .cs-body { grid-column: 2; margin-top: 22px; }
+  .cs-rest .cs-screens { grid-column: 1 / -1; margin-top: 64px; }
+
+  .cs-built { margin-top: 56px; }
+  .cs-test .cs-wrap { display: grid; grid-template-columns: minmax(0, .34fr) minmax(0, .66fr); column-gap: 48px; }
+  .cs-test .cs-eyebrow { grid-column: 1; }
+  .cs-test .cs-h2 { grid-column: 2; margin-top: 0; }
+  .cs-questions,
+  .cs-test-note { grid-column: 2; }
+  .cs-questions { margin-top: 48px; }
+
+  .cs-next .cs-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .8fr); column-gap: 80px; }
+  .cs-next .cs-tag { grid-column: 1; }
+  .cs-next-title { grid-column: 1; font-size: clamp(3.4rem, 5vw, 4.5rem); }
+  .cs-next .cs-btn { grid-column: 1; justify-self: start; }
+  .cs-notes { grid-column: 2; grid-row: 1 / span 3; margin-top: 0; display: block; align-self: end; max-width: 420px; }
+  .cs-notes p { margin-top: 8px; }
+  .cs-home { margin-top: 20px; }
+}
+
+@media (min-width: 1180px) {
+  .cs-wrap { padding-inline: 48px; }
+  .cs-crash { aspect-ratio: 1120 / 460; }
+}
+
+@media (max-width: 380px) {
+  .cs-swatches { gap: 18px 14px; }
+  .cs-crash { margin-top: 88px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+}

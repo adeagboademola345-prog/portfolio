@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Abode — Case study · Ademola Adeagbo</title>
+  <meta name="description" content="How Abode was designed as two products in one app: a tenant journey from verification to a receipts-backed lease, and a landlord journey from listing to rent collection.">
+  <meta name="author" content="Ademola Peter Adeagbo">
+  <meta name="theme-color" content="#f2f0ea">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://www.ademolaadeagbo.com.ng/abode/case-study">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Abode — Case study">
+  <meta property="og:description" content="Two products wearing one name: the tenant and landlord journeys behind Abode.">
+  <meta property="og:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/abode-2.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=IBM+Plex+Mono:wght@400;500&family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../work.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="bar" id="bar">
+    <div class="bar-in">
+      <a class="bar-name" href="../index.html">Ademola Adeagbo</a>
+      <nav class="bar-nav" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="bar-right">
+        <span class="avail mono"><i aria-hidden="true"></i>Open for work</span>
+        <a class="btn btn-ink btn-sm" href="../assets/Ademola-Adeagbo-CV.pdf" download>CV <span aria-hidden="true">↓</span></a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+          <span class="mb-label">Menu</span>
+          <span class="mb-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="bar-progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <div class="drawer" id="drawer" hidden>
+    <nav aria-label="Mobile">
+      <a href="../index.html#work"><span class="mono">01</span>Work</a>
+      <a href="../index.html#about"><span class="mono">02</span>About</a>
+      <a href="../index.html#services"><span class="mono">03</span>Services</a>
+      <a href="../index.html#contact"><span class="mono">04</span>Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a class="btn btn-yellow" href="../assets/Ademola-Adeagbo-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+      <p class="mono">adeagboademola345@gmail.com</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="pj-hero wrap">
+      <a class="pj-crumb" href="index.html"><span aria-hidden="true">←</span> Abode overview</a>
+      <h1 class="pj-title">Two products <em>wearing one name.</em></h1>
+      <p class="pj-lede">Most renting apps are built for the person looking. Abode had to work for the person letting too — which meant designing two journeys that share a brand, a database and a design system, but almost nothing else.</p>
+
+      <dl class="pj-facts">
+        <div><dt>Role</dt><dd>Product design, UI</dd></div>
+        <div><dt>Platform</dt><dd>Mobile · 390 × 844</dd></div>
+        <div><dt>Scope</dt><dd>68 screens, two sides</dd></div>
+        <div><dt>Status</dt><dd>Concept prototype</dd></div>
+      </dl>
+    </section>
+
+    <div class="wrap">
+      <div class="pj-body">
+        <p class="kicker mono">01 — The problem</p>
+        <div class="pj-prose">
+          <h2>An agent in the middle of a basic need.</h2>
+          <p>Renting in Nigeria usually starts with a fee paid to someone who does not own the property and may not have seen it recently. The tenant carries the risk: an inaccurate listing, an unreachable landlord, cash handed over with nothing to show for it.</p>
+          <p>The product decision that shaped everything else was to verify both sides and keep the record in the app — identity, lease and payment. Remove the agent, and the app absorbs the work the agent was being paid for.</p>
+        </div>
+      </div>
+
+      <figure class="pj-media">
+        <img src="../assets/projects/abode-2.jpg" alt="Abode screens across tenant and landlord flows" width="1600" height="1040" loading="lazy" decoding="async">
+        <figcaption><span>Fig. 02 — A sample of the 68 screens</span><span>Tenant and landlord</span></figcaption>
+      </figure>
+
+      <div class="pj-body">
+        <p class="kicker mono">02 — Structure</p>
+        <div class="pj-prose">
+          <h2>Ask once, then get out of the way.</h2>
+          <p>The first real screen is a role choice. From there each side gets its own tab bar and its own home, because a tenant opens the app to find a home and a landlord opens it to manage one. Sharing a dashboard between those two intents would have made both worse.</p>
+          <p>What is shared: verification, the lease, rent, repairs and ratings. A payment made by a tenant is the same object a landlord sees in their collection screen — one record, two views.</p>
+        </div>
+      </div>
+
+      <ul class="pj-list">
+        <li><span class="n">01</span><div><b>Verify once</b><span class="txt">NIN and BVN identity checks sit before the marketplace, so every listing and every application is attached to a real person.</span></div></li>
+        <li><span class="n">02</span><div><b>One lease</b><span class="txt">Signed in the app by both sides, with the same document and dates visible to tenant and landlord.</span></div></li>
+        <li><span class="n">03</span><div><b>One payment record</b><span class="txt">Every instalment produces a receipt for the tenant and a line in the landlord's collection view.</span></div></li>
+      </ul>
+
+      <div class="pj-body">
+        <p class="kicker mono">03 — Tenant journey</p>
+        <div class="pj-prose">
+          <h2>From searching to sleeping there.</h2>
+          <p>Six steps, each with a screen pair: what the tenant sees, and the state that follows. The sequence stays linear on purpose — renting has a beginning and an end, and the interface should not pretend otherwise.</p>
+        </div>
+      </div>
+
+      <section class="pj-steps" aria-label="Tenant journey steps">
+        <div class="pj-step">
+          <span class="mono">01 — Discover</span>
+          <h4>Find a home</h4>
+          <p>Browse by area and budget, then narrow with filters that survive a return visit.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/home.webp" alt="Home feed of nearby listings" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/filters.webp" alt="Price and bedroom filters" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">02 — Evaluate</span>
+          <h4>Judge the listing</h4>
+          <p>Photos, price, what is included — and who the landlord is, before any contact.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/home-details.webp" alt="Listing detail" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/landlord-profile.webp" alt="Verified landlord profile" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">03 — Inspect</span>
+          <h4>See it, then apply</h4>
+          <p>Book a slot instead of calling, then apply with the details already on file.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/book-inspection.webp" alt="Booking an inspection" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/apply.webp" alt="Rental application" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">04 — Commit</span>
+          <h4>Sign the lease</h4>
+          <p>The agreement is read and signed in-app; the home screen changes to reflect it.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/sign-lease.webp" alt="Signing a lease" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/my-home.webp" alt="My home after signing" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">05 — Pay</span>
+          <h4>Choose a plan</h4>
+          <p>Yearly, quarterly or monthly — with a receipt that can be produced later.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/pay-rent-plan.webp" alt="Rent plan selection" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/receipt.webp" alt="Payment receipt" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">06 — Live</span>
+          <h4>Stay, or leave cleanly</h4>
+          <p>Repairs are raised in the app, and a move-out notice is a formal step rather than a text message.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/repairs.webp" alt="Reporting a repair" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/payments.webp" alt="Payment history" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="pj-body">
+        <p class="kicker mono">04 — Landlord journey</p>
+        <div class="pj-prose">
+          <h2>The side that decides whether it works.</h2>
+          <p>A tenant can abandon a search. A landlord who cannot list, screen or get paid has no reason to stay — so this half is built around three jobs, not a feed.</p>
+        </div>
+      </div>
+
+      <section class="pj-steps" aria-label="Landlord journey steps">
+        <div class="pj-step">
+          <span class="mono">01 — List</span>
+          <h4>Four steps to live</h4>
+          <p>Property, rent, photographs, publish. One progress bar for the whole task.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/add-home.webp" alt="Adding a home" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/my-homes.webp" alt="Landlord property list" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">02 — Screen</span>
+          <h4>Choose a tenant</h4>
+          <p>Applications arrive verified, so the decision is about fit rather than paperwork.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/applications.webp" alt="Tenant applications" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/create-lease.webp" alt="Creating a lease" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">03 — Collect</span>
+          <h4>Get paid, move it out</h4>
+          <p>Rent lands against the tenancy; earnings can be withdrawn to a bank account.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/abode/rent-collection.webp" alt="Rent collection" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/abode/withdraw-earnings.webp" alt="Withdrawing earnings" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="pj-body">
+        <p class="kicker mono">05 — The system</p>
+        <div class="pj-prose">
+          <h2>One palette for two audiences.</h2>
+          <p>The tenant side needs warmth and reassurance; the landlord side needs clarity and numbers. Rather than two brands, the palette does the work: deep green for trust, navy for text and structure, amber only where money is involved.</p>
+        </div>
+      </div>
+
+      <div class="pj-system">
+        <div class="pj-swatches">
+          <div class="pj-swatch"><i style="background:#0E6B45"></i><span class="mono">Brand · #0E6B45</span></div>
+          <div class="pj-swatch"><i style="background:#093F29"></i><span class="mono">Ink · #093F29</span></div>
+          <div class="pj-swatch"><i style="background:#F5A524"></i><span class="mono">Money · #F5A524</span></div>
+          <div class="pj-swatch"><i style="background:#F4F1EA;border:1px solid rgba(17,17,16,.1)"></i><span class="mono">Surface · #F4F1EA</span></div>
+        </div>
+        <div class="pj-type">
+          <div class="pj-type-row"><span class="mono">Display — Nunito 800</span><p class="serif">Rent paid. Receipt saved.</p></div>
+          <div class="pj-type-row"><span class="mono">Text — Inter 400</span><p style="font-family:Inter,var(--font-sans);font-weight:400;font-size:1rem;letter-spacing:0">Verify your identity once, then apply to any home on Abode.</p></div>
+          <div class="pj-type-row"><span class="mono">Spacing — 4pt base</span><p style="font-family:var(--font-mono);font-weight:400;font-size:.8rem;letter-spacing:0">4 / 8 / 12 / 16 / 24 / 32</p></div>
+        </div>
+      </div>
+
+      <div class="pj-cta">
+        <div>
+          <h2>Sixty-eight screens, one prototype.</h2>
+          <p>The full flow is clickable in Figma, tenant side and landlord side.</p>
+        </div>
+        <a class="btn btn-ink" href="https://www.figma.com/proto/ibOFGRywhWBnyVy7Rm6RMe/Adobe?node-id=36-160&amp;viewport=3832%2C-3297%2C0.1&amp;t=ZpG9LGKvfA0dRJyq-1&amp;scaling=scale-down&amp;content-scaling=responsive&amp;starting-point-node-id=36%3A248&amp;page-id=0%3A1" target="_blank" rel="noopener">Open prototype <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <nav class="pj-pager" aria-label="Project navigation">
+        <a href="index.html"><span class="mono">Overview</span><strong>Abode</strong></a>
+        <a href="../work/sprout.html"><span class="mono">Next project</span><strong>Sprout →</strong></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-row mono">
+        <span>© <span id="year">2026</span> Ademola Peter Adeagbo</span>
+        <span>Lagos, Nigeria · Working globally</span>
+        <a href="../assets/Ademola-Adeagbo-CV.pdf" download>CV (PDF)</a>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="foot-name" aria-hidden="true"><span>Ademola</span><span>Adeagbo</span></div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>

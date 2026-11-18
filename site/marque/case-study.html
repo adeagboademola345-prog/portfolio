@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Marque — case study — Ademola Adeagbo</title>
+  <meta name="description" content="How Marque was designed: a concept luxury car marketplace for Lagos where buying and renting feel equally trustworthy. Three assumptions, six decisions and thirty-five screens.">
+  <meta name="author" content="Ademola Peter Adeagbo">
+  <meta name="theme-color" content="#ededea">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://www.ademolaadeagbo.com.ng/marque/case-study">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ademolaadeagbo.com.ng/marque/case-study">
+  <meta property="og:title" content="Marque — case study">
+  <meta property="og:description" content="A luxury car marketplace where buying and renting feel equally trustworthy. Three assumptions, six decisions and thirty-five screens.">
+  <meta property="og:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/marque/case-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Ademola Peter Adeagbo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Marque — case study">
+  <meta name="twitter:description" content="A luxury car marketplace where buying and renting feel equally trustworthy.">
+  <meta name="twitter:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/marque/case-og.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Instrument+Serif&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="case.css">
+</head>
+<body class="cs">
+  <a class="cs-skip" href="#main">Skip to content</a>
+
+  <main id="main" class="cs-page">
+
+    <header class="cs-masthead">
+      <div class="cs-wrap">
+        <p class="cs-eyebrow">CONCEPT PROJECT · 2026</p>
+        <div class="cs-topline">
+          <a class="cs-name" href="../index.html">Ademola Adeagbo</a>
+          <span class="cs-kicker">Case study</span>
+        </div>
+        <h1 class="cs-title">Marque</h1>
+        <p class="cs-deck">A luxury car marketplace where buying and renting feel equally trustworthy.</p>
+
+        <dl class="cs-meta">
+          <div>
+            <dt>ROLE</dt>
+            <dd>Product design, UI and prototyping</dd>
+          </div>
+          <div>
+            <dt>PLATFORM</dt>
+            <dd>iOS, 390 × 844</dd>
+          </div>
+          <div>
+            <dt>SCOPE</dt>
+            <dd>35 screens, 6 cars</dd>
+          </div>
+          <div>
+            <dt>TOOLS</dt>
+            <dd>Figma, HTML and CSS, a custom Figma plugin</dd>
+          </div>
+        </dl>
+
+        <div class="cs-crash" aria-label="Two Marque screens: the Buy home screen and a car page.">
+          <figure class="cs-crash-a">
+            <img src="../assets/projects/marque/fig/c02.webp" width="489" height="1026" alt="Marque car page for a Range Rover Autobiography." decoding="async">
+          </figure>
+          <figure class="cs-crash-b">
+            <img src="../assets/projects/marque/fig/c01.webp" width="489" height="1026" alt="Marque home screen in Buy mode." decoding="async">
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <section class="cs-overview" aria-labelledby="overview-title">
+      <div class="cs-wrap">
+        <h2 class="cs-eyebrow" id="overview-title">OVERVIEW</h2>
+        <p class="cs-overview-lead">Marque is a concept app for buying, financing and renting luxury cars in Lagos. I designed it end to end, from a drive-in splash to the privacy policy at the bottom of the profile.</p>
+        <p class="cs-overview-body">The result is 35 screens in 11 sections, built around photographs of six real cars: a Buy journey with offers and finance, a Rent journey with an itemised price, and the account system behind both.</p>
+
+        <aside class="cs-note">
+          <h3>A note on method</h3>
+          <p>No users were interviewed for this project. The problems below are assumptions I wrote down so I could design against them, and the last section lists how I would test them.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cs-assumptions" aria-labelledby="assumptions-title">
+      <div class="cs-wrap">
+        <h2 class="cs-eyebrow" id="assumptions-title">ASSUMPTIONS</h2>
+        <p class="cs-h2">Three things I assumed, and what each one changed.</p>
+
+        <ol class="cs-assumption-list">
+          <li>
+            <p class="cs-tag">01 · ASSUMPTION</p>
+            <h3>Buyers decide on paperwork, not horsepower.</h3>
+            <p class="cs-tag">SO THE APP</p>
+            <p class="cs-statement">Puts duty status, customs verification and the inspection date directly under the price.</p>
+          </li>
+          <li>
+            <p class="cs-tag">02 · ASSUMPTION</p>
+            <h3>A rental price feels like a trap when the fees arrive late.</h3>
+            <p class="cs-tag">SO THE APP</p>
+            <p class="cs-statement">Asks for dates first, then shows every line of the price and the deposit before the Pay button.</p>
+          </li>
+          <li>
+            <p class="cs-tag">03 · ASSUMPTION</p>
+            <h3>Buying and renting are one audience looking at the same cars.</h3>
+            <p class="cs-tag">SO THE APP</p>
+            <p class="cs-statement">Has one home screen with a switch, not two separate apps.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-block cs-block--tint cs-split" aria-labelledby="decision-1">
+      <div class="cs-wrap">
+        <div class="cs-copy">
+          <p class="cs-tag">DECISION 01</p>
+          <h2 class="cs-h3" id="decision-1">One switch, two modes.</h2>
+          <p class="cs-body">Buy and Rent share one home screen. The switch at the top changes what each card leads with: price and location when buying, a per-day rate and a chauffeur tag when renting.</p>
+          <p class="cs-body">The Rent view also opens with the pick-up point and dates, because those are what change the price.</p>
+        </div>
+
+        <div class="cs-pair">
+          <figure>
+            <img src="../assets/projects/marque/fig/c03.webp" width="495" height="1038" alt="Home screen in Buy mode with price and location." loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="../assets/projects/marque/fig/c04.webp" width="495" height="1038" alt="Home screen in Rent mode with pick-up point and dates." loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <figure class="cs-bigphone">
+      <img src="../assets/projects/marque/fig/c05.webp" width="513" height="1076" alt="Car page with price, duty status, verified dealer and inspection." loading="lazy" decoding="async">
+    </figure>
+
+    <section class="cs-block" aria-labelledby="decision-2">
+      <div class="cs-wrap">
+        <p class="cs-tag">DECISION 02</p>
+        <h2 class="cs-h3" id="decision-2">Trust sits next to the price.</h2>
+        <p class="cs-body">On a car page, the price is followed straight away by the three things a buyer worries about: duty status in the line under the name, the dealer with a verified badge and rating, and a one-line inspection result with the report date.</p>
+        <p class="cs-body">The thumb zone holds two actions only, Book viewing and Make an offer.</p>
+      </div>
+    </section>
+
+    <section class="cs-block cs-block--tint cs-split" aria-labelledby="decision-3">
+      <div class="cs-wrap">
+        <div class="cs-copy">
+          <p class="cs-tag">DECISION 03</p>
+          <h2 class="cs-h3" id="decision-3">An offer, not a buy-now button.</h2>
+          <p class="cs-body">I assumed negotiation is the normal way to buy a car at this price, so the main action is Make an offer. It starts at the asking price with quick steps down to −8%, an optional finance toggle that shows an indicative monthly figure, and a note to the dealer.</p>
+          <p class="cs-body">The screen ends with the reassurance a nervous buyer needs: offers are held for 24 hours, and nothing is charged yet.</p>
+        </div>
+
+        <div class="cs-pair">
+          <figure>
+            <img src="../assets/projects/marque/fig/c06.webp" width="495" height="1038" alt="Make an offer screen with percentage steps and finance toggle." loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="../assets/projects/marque/fig/c07.webp" width="495" height="1038" alt="Offer sent confirmation." loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="cs-pair cs-pair--rent">
+      <figure>
+        <img src="../assets/projects/marque/fig/c08.webp" width="495" height="1038" alt="Select dates screen with a calendar and pick-up point." loading="lazy" decoding="async">
+      </figure>
+      <figure>
+        <img src="../assets/projects/marque/fig/c09.webp" width="495" height="1038" alt="Review and pay screen with an itemised price and deposit." loading="lazy" decoding="async">
+      </figure>
+    </div>
+
+    <section class="cs-block" aria-labelledby="decision-4">
+      <div class="cs-wrap">
+        <p class="cs-tag">DECISION 04</p>
+        <h2 class="cs-h3" id="decision-4">Every naira, before you pay.</h2>
+        <p class="cs-body">Renting goes dates first, then one itemised screen: rental, chauffeur and insurance, service fee and VAT, then the total.</p>
+        <p class="cs-body">The ₦1,000,000 refundable deposit is stated above the Pay button, with when it is released. After paying, the confirmation carries a booking code for the chauffeur.</p>
+      </div>
+    </section>
+
+    <section class="cs-block cs-block--tint" aria-labelledby="decision-5">
+      <div class="cs-wrap">
+        <p class="cs-tag">DECISION 05</p>
+        <h2 class="cs-h3" id="decision-5">Soft grey, so the cars bring the colour.</h2>
+        <p class="cs-body">The interface is deliberately quiet: soft greys, near-black ink and one brass accent. Nearly all the colour on screen comes from the photographs, so a blue Cullinan or a white Range Rover is the loudest thing on the page. Instrument Serif gives headlines an editorial voice; Instrument Sans does everything you tap.</p>
+
+        <ul class="cs-swatches">
+          <li>
+            <span class="cs-chip cs-chip--screen"></span>
+            <b>Screen</b>
+            <em>#E6E6E3</em>
+          </li>
+          <li>
+            <span class="cs-chip cs-chip--card"></span>
+            <b>Card</b>
+            <em>#F2F2F0</em>
+          </li>
+          <li>
+            <span class="cs-chip cs-chip--ink"></span>
+            <b>Ink</b>
+            <em>#121314</em>
+          </li>
+          <li>
+            <span class="cs-chip cs-chip--brass"></span>
+            <b>Brass</b>
+            <em>#A88650</em>
+          </li>
+          <li>
+            <span class="cs-chip cs-chip--positive"></span>
+            <b>Positive</b>
+            <em>#3E7C5A</em>
+          </li>
+        </ul>
+
+        <div class="cs-cars">
+          <figure>
+            <img src="../assets/projects/marque/fig/c10.webp" width="727" height="485" alt="Blue Rolls-Royce Cullinan." loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="../assets/projects/marque/fig/c11.webp" width="636" height="424" alt="Black Mercedes-Benz S 580." loading="lazy" decoding="async">
+          </figure>
+          <figure>
+            <img src="../assets/projects/marque/fig/c12.webp" width="724" height="483" alt="Blue Lamborghini Urus." loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-block cs-block--dark" aria-labelledby="decision-6">
+      <div class="cs-wrap">
+        <p class="cs-tag">DECISION 06</p>
+        <h2 class="cs-h3" id="decision-6">A splash that sells the car.</h2>
+        <p class="cs-body">The opening should feel like the product. A car drives in, brakes and settles, the headlights come on, then the wordmark and the welcome copy rise in. I drew it as six frames with identical layers so Figma’s Smart Animate can tween between them, and built the same sequence as a standalone animated prototype.</p>
+
+        <ol class="cs-splash">
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c13.webp" width="513" height="1076" alt="Splash frame 1, the car enters from the left." loading="lazy" decoding="async"></figure>
+            <figcaption><b>1</b> Car enters</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c14.webp" width="513" height="1076" alt="Splash frame 2, the car brakes." loading="lazy" decoding="async"></figure>
+            <figcaption><b>2</b> Braking</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c15.webp" width="513" height="1076" alt="Splash frame 3, the car settles in the centre." loading="lazy" decoding="async"></figure>
+            <figcaption><b>3</b> Settling</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c16.webp" width="513" height="1076" alt="Splash frame 4, headlights on." loading="lazy" decoding="async"></figure>
+            <figcaption><b>4</b> Headlights on</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c17.webp" width="513" height="1076" alt="Splash frame 5, the Marque wordmark appears." loading="lazy" decoding="async"></figure>
+            <figcaption><b>5</b> Wordmark</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c18.webp" width="513" height="1076" alt="Splash frame 6, the welcome headline and copy rise in." loading="lazy" decoding="async"></figure>
+            <figcaption><b>6</b> Welcome</figcaption>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-rest" aria-labelledby="rest-title">
+      <div class="cs-wrap">
+        <h2 class="cs-eyebrow" id="rest-title">THE REST OF THE APP</h2>
+        <p class="cs-h2">A marketplace that stops at the car page isn’t a product.</p>
+        <p class="cs-body">So I designed what sits around it: sign-up with phone verification, a guest mode, search with recent and popular makes, notifications, saved cars and trips, a profile with payment methods, phone, email, licence and selfie verification, a help centre, and the privacy policy and terms. Two sheets handle booking a viewing and logging out.</p>
+
+        <ul class="cs-screens">
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c19.webp" width="507" height="1064" alt="Log in screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Log in</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c20.webp" width="507" height="1064" alt="Create account screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Create account</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c21.webp" width="507" height="1064" alt="Verify phone screen with a numeric keypad." loading="lazy" decoding="async"></figure>
+            <figcaption>Verify phone</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c22.webp" width="507" height="1064" alt="Search screen with recent searches and popular makes." loading="lazy" decoding="async"></figure>
+            <figcaption>Search</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c23.webp" width="507" height="1064" alt="Notifications screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Notifications</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c24.webp" width="507" height="1064" alt="Saved cars screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Saved</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c25.webp" width="507" height="1064" alt="Trips screen with upcoming and past bookings." loading="lazy" decoding="async"></figure>
+            <figcaption>Trips</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c26.webp" width="507" height="1064" alt="Profile screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Profile</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c27.webp" width="507" height="1064" alt="Edit profile screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Edit profile</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c28.webp" width="507" height="1064" alt="Payment methods screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Payment methods</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c29.webp" width="507" height="1064" alt="Add card screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Add card</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c30.webp" width="507" height="1064" alt="Verification screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Verification</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c31.webp" width="507" height="1064" alt="Help centre screen with common questions." loading="lazy" decoding="async"></figure>
+            <figcaption>Help centre</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c32.webp" width="507" height="1064" alt="Guest profile screen." loading="lazy" decoding="async"></figure>
+            <figcaption>Guest profile</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c33.webp" width="507" height="1064" alt="Book a viewing sheet." loading="lazy" decoding="async"></figure>
+            <figcaption>Book a viewing</figcaption>
+          </li>
+          <li>
+            <figure><img src="../assets/projects/marque/fig/c34.webp" width="507" height="1064" alt="Log out sheet." loading="lazy" decoding="async"></figure>
+            <figcaption>Log out</figcaption>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cs-block cs-block--tint cs-head" aria-labelledby="built-title">
+      <div class="cs-wrap">
+        <h2 class="cs-eyebrow" id="built-title">HOW I BUILT IT</h2>
+        <p class="cs-h2">Map it, build it in code, then make every control work.</p>
+
+        <ol class="cs-built">
+          <li>
+            <p class="cs-tag">01</p>
+            <h3>Mapped before drawn</h3>
+            <p>I listed every screen and every tap target first, in 11 sections, so nothing in the prototype leads nowhere.</p>
+          </li>
+          <li>
+            <p class="cs-tag">02</p>
+            <h3>Built in code</h3>
+            <p>The screens are HTML and CSS sharing one set of components and the real photographs, which kept 35 screens consistent and made a change to one place a change to all.</p>
+          </li>
+          <li>
+            <p class="cs-tag">03</p>
+            <h3>Made clickable</h3>
+            <p>A prototype where every control routes somewhere, from splash to log out, checked with 67 automated route tests. I also wrote a Figma plugin that rebuilds the screens as editable layers with components and prototype links.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-test" aria-labelledby="test-title">
+      <div class="cs-wrap">
+        <h2 class="cs-eyebrow" id="test-title">WHAT I’D TEST NEXT</h2>
+        <p class="cs-h2">Three questions the prototype can’t answer.</p>
+
+        <ol class="cs-questions">
+          <li>
+            <span class="cs-tag">01</span>
+            <div>
+              <h3>Do buyers trust the inspection line?</h3>
+              <p>Test the car page with and without it, and watch where people look before they tap Make an offer.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cs-tag">02</span>
+            <div>
+              <h3>Do renters read the breakdown?</h3>
+              <p>See whether people study the itemised screen or jump to the total, and whether stating the deposit up front causes drop-off.</p>
+            </div>
+          </li>
+          <li>
+            <span class="cs-tag">03</span>
+            <div>
+              <h3>Is one switch enough?</h3>
+              <p>Give people a goal, such as “rent something for the weekend”, and see whether they find Rent on the first try.</p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="cs-test-note">I would run these with five to eight buyers and renters in Lagos before changing anything.</p>
+      </div>
+    </section>
+
+    <section class="cs-next" aria-labelledby="next-title">
+      <div class="cs-wrap">
+        <p class="cs-tag">NEXT</p>
+        <h2 class="cs-next-title" id="next-title">See the product page.</h2>
+        <a class="cs-btn" href="index.html">Marque landing page</a>
+
+        <div class="cs-notes">
+          <h3>Notes on the work</h3>
+          <p>Cars, dealers, prices, ratings and bookings are sample data. The car photographs are used for concept purposes, and the colour options on the Cullinan and Urus are recoloured previews, not photographs of those paint options. The design has not been tested with users.</p>
+          <a class="cs-home" href="../index.html">ademolaadeagbo.com.ng</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

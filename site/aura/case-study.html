@@ -1,0 +1,357 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Aura Archive — Case study · Ademola Adeagbo</title>
+  <meta name="description" content="How Aura Archive was designed: the door, the collection, the transaction and the private viewing. A self-initiated luxury fashion concept, thirty screens in Figma.">
+  <meta name="author" content="Ademola Peter Adeagbo">
+  <meta name="theme-color" content="#f2f0ea">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://www.ademolaadeagbo.com.ng/aura/case-study">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Aura Archive — A shop that behaves like a private view">
+  <meta property="og:description" content="The full case study: entry, collection, checkout and private viewings for a luxury fashion concept on the phone.">
+  <meta property="og:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/aura/aura-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://www.ademolaadeagbo.com.ng/aura/case-study">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aura Archive — A shop that behaves like a private view">
+  <meta name="twitter:description" content="The full case study: entry, collection, checkout and private viewings for a luxury fashion concept on the phone.">
+  <meta name="twitter:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/aura/aura-og.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../work.css">
+  <link rel="stylesheet" href="aura.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="aura-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="bar" id="bar">
+    <div class="bar-in">
+      <a class="bar-name" href="../index.html">Ademola Adeagbo</a>
+      <nav class="bar-nav" aria-label="Primary">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="bar-right">
+        <span class="avail mono"><i aria-hidden="true"></i>Open for work</span>
+        <a class="btn btn-ink btn-sm" href="../assets/Ademola-Adeagbo-CV.pdf" download>CV <span aria-hidden="true">↓</span></a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+          <span class="mb-label">Menu</span>
+          <span class="mb-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="bar-progress" id="progress" aria-hidden="true"></div>
+  </header>
+
+  <div class="drawer" id="drawer" hidden>
+    <nav aria-label="Mobile">
+      <a href="../index.html#work"><span class="mono">01</span>Work</a>
+      <a href="../index.html#about"><span class="mono">02</span>About</a>
+      <a href="../index.html#services"><span class="mono">03</span>Services</a>
+      <a href="../index.html#contact"><span class="mono">04</span>Contact</a>
+    </nav>
+    <div class="drawer-foot">
+      <a class="btn btn-yellow" href="../assets/Ademola-Adeagbo-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+      <p class="mono">adeagboademola345@gmail.com</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="pj-hero wrap">
+      <a class="pj-crumb" href="index.html"><span aria-hidden="true">←</span> Aura Archive overview</a>
+      <h1 class="pj-title">A shop that behaves <em>like a private view.</em></h1>
+      <p class="pj-lede">Most luxury shopping on a phone still feels like a website squeezed into a screen. Aura Archive treats the phone as a house instead: a door, a room, a season, and a person who knows your size.</p>
+
+      <dl class="pj-facts">
+        <div><dt>Role</dt><dd>Sole designer — UX &amp; UI</dd></div>
+        <div><dt>Scope</dt><dd>30 screens · five flows</dd></div>
+        <div><dt>Timeline</dt><dd>2–4 weeks</dd></div>
+        <div><dt>Status</dt><dd>Self-initiated concept</dd></div>
+      </dl>
+
+      <figure class="pj-media">
+        <img src="../assets/projects/aura/aura-2.jpg" alt="Five Aura Archive screens: home, collection, product, editorial and bag" width="1600" height="1040" fetchpriority="high" decoding="async">
+        <figcaption><span>Fig. 01 — Five screens from the SS27 flow</span><span>Home to bag</span></figcaption>
+      </figure>
+    </section>
+
+    <div class="wrap">
+      <div class="pj-body">
+        <p class="kicker mono">01 — The brief I set myself</p>
+        <div class="pj-prose">
+          <h2>Design the feeling before the funnel.</h2>
+          <p>This was a self-initiated concept. There was no client, no existing brand and no analytics to react to. The brief was a question: what would a fashion house build if it started on the phone rather than adapting a shop?</p>
+          <p>The answer I designed toward was a sequence of small, deliberate moments: being let in, being asked what you love, seeing one piece properly, and being able to ask a person about it. Commerce sits inside that sequence rather than interrupting it.</p>
+          <p>Scope was the discipline. One season, nine pieces, five flows, thirty screens. A tight catalogue makes the editorial and service layers visible; a hundred products would have turned the concept back into a grid.</p>
+        </div>
+      </div>
+
+      <div class="pj-body">
+        <p class="kicker mono">02 — The door</p>
+        <div class="pj-prose">
+          <h2>Let people in, then ask one useful question.</h2>
+          <p>Sign-in is a cover, not a gate. Apple, Google, email and “Browse as guest” sit on the same screen, and the guest route is given equal weight. The tone is “portal access”, not “create an account to continue”.</p>
+          <p>Onboarding asks two things: which categories you wear and your usual size. Both can be skipped. The home uses the answers to lead with the right pieces, but the full collection stays open — personalisation is a shortcut, not a lock.</p>
+        </div>
+      </div>
+
+      <div class="pj-pair pj-pair--detail">
+        <figure>
+          <img src="../assets/projects/aura/signin.webp" alt="Sign in screen with Apple, Google, email and browse as guest" width="780" height="1688" loading="lazy" decoding="async">
+          <figcaption><span>Sign in</span><span>Portal access</span></figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/aura/taste.webp" alt="Onboarding asking for favourite categories and usual size" width="780" height="1692" loading="lazy" decoding="async">
+          <figcaption><span>Taste onboarding</span><span>Two questions</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="pj-body">
+        <p class="kicker mono">03 — The architecture</p>
+        <div class="pj-prose">
+          <h2>Five tabs, one record.</h2>
+          <p>Home, Collection, Saved, Bag, Profile. The five tabs never change, and the bag count carries across the browsing screens. A saved piece and a purchased piece are the same object at different states, not separate catalogue entries.</p>
+          <p>The service layer lives in Profile: orders, private viewings, saved pieces, addresses, payment methods, notifications, region, help and the legal pages. Putting it there keeps the shopping tabs clean without hiding the relationship after checkout.</p>
+        </div>
+      </div>
+
+      <ul class="pj-list">
+        <li><span class="n">01</span><div><b>The piece</b><span class="txt">One product record travels from home to collection, saved, bag and order — same photograph, same price, same copy.</span></div></li>
+        <li><span class="n">02</span><div><b>The bag</b><span class="txt">A persistent object with quantity, promo, subtotal and delivery. It is never rebuilt from scratch between screens.</span></div></li>
+        <li><span class="n">03</span><div><b>The appointment</b><span class="txt">A reservation with a boutique, date, time, guest and a note for the stylist — editable and cancellable in place.</span></div></li>
+      </ul>
+
+      <div class="pj-body">
+        <p class="kicker mono">04 — The room</p>
+        <div class="pj-prose">
+          <h2>A home that changes with the season.</h2>
+          <p>The home is built as an issue rather than a dashboard: a cover, a greeting, the SS27 feature, then New in, Look of the week, Shop by category and The edits. The three counters — saved, in bag, viewing — sit near the top, so the commerce never disappears while you are being editorial.</p>
+          <p>The collection is the opposite: a flat, filterable grid, a search field and four categories. It is the one screen in the app designed to be scanned rather than read, and it is where the season becomes a catalogue.</p>
+        </div>
+      </div>
+
+      <div class="pj-pair pj-pair--detail">
+        <figure>
+          <img src="../assets/projects/aura/home.webp" alt="Aura Archive home screen with SS27 feature and new in rail" width="780" height="1688" loading="lazy" decoding="async">
+          <figcaption><span>Home</span><span>SS27 · private access</span></figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/aura/collection.webp" alt="The Collection screen with filters and nine SS27 pieces" width="780" height="1688" loading="lazy" decoding="async">
+          <figcaption><span>The Collection</span><span>Spring / Summer 2027</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="pj-body">
+        <p class="kicker mono">05 — The piece</p>
+        <div class="pj-prose">
+          <h2>One photograph, then everything you need to decide.</h2>
+          <p>The product page gives the image most of the screen, then the price, the copy and the size row. Size guide sits beside the size selector; details, care, delivery and returns are accordions beneath. “You may also like” is a horizontal rail, not a wall.</p>
+          <p>The sample piece is the Aurelia Gown — $1,480, a floor-length evening gown cut to move, made in the atelier from certified fabrics with hand-finished seams. The model is 176 cm and wears size S. That specificity is what makes a product page feel like a shop rather than a template.</p>
+        </div>
+      </div>
+
+      <div class="pj-pair pj-pair--detail">
+        <figure>
+          <img src="../assets/projects/aura/pdp.webp" alt="Aurelia Gown product page with size row and add to bag" width="780" height="1688" loading="lazy" decoding="async">
+          <figcaption><span>Aurelia Gown</span><span>Product page</span></figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/aura/size-guide.webp" alt="Size guide with bust, waist and hip measurements in centimetres" width="780" height="1689" loading="lazy" decoding="async">
+          <figcaption><span>Size guide</span><span>Measured on the body</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="pj-body">
+        <p class="kicker mono">06 — The editorial layer</p>
+        <div class="pj-prose">
+          <h2>Sell the look, not just the item.</h2>
+          <p>Look of the week is a full-bleed story: <strong>“After dark.”</strong> — black velvet, golden embroidery and a slit that moves with you, styled by the atelier and finished with a structured bag in gold. The pieces are shoppable underneath, so the story is also a route into the catalogue.</p>
+          <p>The edits — The Evening Edit, Resort Tailoring, Gold Hour — give the same nine pieces a second entrance. Curating by mood rather than category is closer to how people actually shop for an occasion, and it lets one product appear in several contexts without duplicating it.</p>
+        </div>
+      </div>
+
+      <div class="pj-pair pj-pair--detail">
+        <figure>
+          <img src="../assets/projects/aura/look.webp" alt="Look of the week editorial showing the Nuit Velvet Gown" width="780" height="2068" loading="lazy" decoding="async">
+          <figcaption><span>Look of the week</span><span>“After dark.”</span></figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/aura/edit.webp" alt="The Evening Edit, a curated rail of gowns and slips" width="780" height="1688" loading="lazy" decoding="async">
+          <figcaption><span>The Evening Edit</span><span>Four pieces</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="pj-body">
+        <p class="kicker mono">07 — The transaction</p>
+        <div class="pj-prose">
+          <h2>Three steps, and a record you can find later.</h2>
+          <p>The bag is a single object that persists across the app. Checkout is split into Delivery, Payment and Review, with the same summary at every step and a final button that states the total. Standard delivery is complimentary, express is $35, and boutique collection is free in Lagos.</p>
+          <p>The confirmation gives an order number and says a confirmation is on its way by email. The order screen turns delivery into four visible states — placed, packed in atelier, on its way, delivered — and keeps the address and card used in the same record.</p>
+        </div>
+      </div>
+
+      <section class="pj-steps" aria-label="Checkout steps">
+        <div class="pj-step">
+          <span class="mono">01 — Choose</span>
+          <h4>One bag, three addresses</h4>
+          <p>Home, studio or a new address; standard, express or boutique collection.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/aura/bag.webp" alt="Bag with the Aurelia Gown and totals" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/aura/checkout-delivery.webp" alt="Checkout delivery step with address and method options" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">02 — Pay</span>
+          <h4>Card or Apple Pay</h4>
+          <p>A saved card, Apple Pay, or a new card that is clearly marked demo-only.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/aura/checkout-payment.webp" alt="Checkout payment step with a saved Visa and Apple Pay" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/aura/checkout-review.webp" alt="Checkout review with items, address, payment and total" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">03 — Keep</span>
+          <h4>A record, not a thank-you</h4>
+          <p>An order number, a confirmation by email, then four delivery states in the order.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/aura/confirmation.webp" alt="Order confirmation screen with order number" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/aura/order.webp" alt="Order detail with delivery timeline, items and payment" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="pj-body">
+        <p class="kicker mono">08 — The appointment</p>
+        <div class="pj-prose">
+          <h2>The part that makes it a house.</h2>
+          <p>Private viewing is the concept’s answer to the luxury store. A customer chooses a boutique — Lagos, London, Paris or Milan — a date, a time and a guest, and writes a note for the stylist. The confirmation says “You are on the list”, not “booking confirmed”.</p>
+          <p>The reservation can be rescheduled without losing the note or guest preferences, and cancelled with a clear consequence: “Your place will be released for another guest.” The concierge sits beside it — a real thread with order tracking, viewings and sizing help.</p>
+        </div>
+      </div>
+
+      <section class="pj-steps" aria-label="Private viewing steps">
+        <div class="pj-step">
+          <span class="mono">01 — Reserve</span>
+          <h4>Choose a room</h4>
+          <p>Four boutiques, four dates, four times, one guest — and a note for the stylist.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/aura/booking.webp" alt="Booking a private viewing with boutique, date and time" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/aura/reservation.webp" alt="Reservation confirmation: you are on the list" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">02 — Change</span>
+          <h4>Keep the note</h4>
+          <p>A new time keeps the appointment’s preferences; cancelling releases the place explicitly.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/aura/reschedule.webp" alt="Rescheduling a private viewing with a new date and time" width="780" height="1688" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/aura/cancelled.webp" alt="Viewing cancelled screen with the released reservation" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+        <div class="pj-step">
+          <span class="mono">03 — Ask</span>
+          <h4>A person, in the app</h4>
+          <p>The concierge handles sizing, orders and viewings without leaving the archive.</p>
+          <div class="pj-pair">
+            <figure><img src="../assets/projects/aura/concierge.webp" alt="Concierge chat with a stylist about the Nuit gown in size S" width="780" height="1690" loading="lazy" decoding="async"></figure>
+            <figure><img src="../assets/projects/aura/viewings.webp" alt="Private viewings list with a reserved London appointment" width="780" height="1688" loading="lazy" decoding="async"></figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="pj-quote">
+        <blockquote>“An hour with a stylist, tea, and the full SS27 collection.”</blockquote>
+        <cite>Aura Archive — private viewing screen</cite>
+      </div>
+
+      <div class="pj-body">
+        <p class="kicker mono">09 — The system</p>
+        <div class="pj-prose">
+          <h2>A palette that behaves like material.</h2>
+          <p>Cocoa (#2A2118) for type, taupe (#6B5E4A) for secondary copy, cream (#FBF7EF) for surfaces and gold (#9C7C3C) for the season. Gold is used sparingly — a rule, a price, a confirmation — so it stays feeling like foil rather than a theme colour.</p>
+          <p>Bodoni Moda gives the headings their fashion voice, Inter keeps the reading quiet, and JetBrains Mono handles labels, totals and order numbers. Radii move between 6, 12, 22 and 999 depending on whether the object is a field, a card, a sheet or a pill.</p>
+        </div>
+      </div>
+
+      <div class="pj-system">
+        <div class="pj-swatches">
+          <div class="pj-swatch"><i style="background:#2a2118"></i><span class="mono">Cocoa · #2A2118</span></div>
+          <div class="pj-swatch"><i style="background:#6b5e4a"></i><span class="mono">Taupe · #6B5E4A</span></div>
+          <div class="pj-swatch"><i style="background:#fbf7ef;border:1px solid rgba(17,17,16,.1)"></i><span class="mono">Cream · #FBF7EF</span></div>
+          <div class="pj-swatch"><i style="background:#9c7c3c"></i><span class="mono">Gold · #9C7C3C</span></div>
+        </div>
+        <div class="pj-type">
+          <div class="pj-type-row"><span class="mono">Display — Bodoni Moda 400</span><p class="aura-type-serif">After dark.</p></div>
+          <div class="pj-type-row"><span class="mono">Text — Inter 400</span><p style="font-family:Inter,var(--font-sans);font-weight:400;font-size:1rem;letter-spacing:0">A floor-length evening gown cut to move. Finished by hand in our atelier.</p></div>
+          <div class="pj-type-row"><span class="mono">Label — JetBrains Mono 400</span><p style="font-family:'JetBrains Mono',var(--font-mono);font-weight:400;font-size:.8rem;letter-spacing:0">SS27 · PRIVATE ACCESS · 3–5 WORKING DAYS</p></div>
+          <div class="pj-type-row"><span class="mono">Radii — 6 / 12 / 22 / 999</span><p style="font-family:var(--font-mono);font-weight:400;font-size:.8rem;letter-spacing:0">Field · Card · Sheet · Pill</p></div>
+        </div>
+      </div>
+
+      <div class="pj-body">
+        <p class="kicker mono">10 — What I’d test next</p>
+        <div class="pj-prose">
+          <h2>The honest open questions.</h2>
+          <p>This is a concept, so there is no usage data and no formal user testing behind it. These are the questions I would want to answer before calling any of it finished:</p>
+        </div>
+      </div>
+
+      <ul class="aura-questions">
+        <li><span class="n">01</span><div><b>Does taste onboarding earn its friction?</b><span>Does a two-question start actually change what people open, or would a strong editorial home do the same job without asking?</span></div></li>
+        <li><span class="n">02</span><div><b>Does guest access help or delay commitment?</b><span>Where is the right moment to ask someone to sign in — at the door, at saved, or at checkout?</span></div></li>
+        <li><span class="n">03</span><div><b>Is the private viewing legible as commerce?</b><span>Do people understand they can reserve a piece for the appointment, or does it read as a purely editorial invitation?</span></div></li>
+        <li><span class="n">04</span><div><b>Does the concierge scale?</b><span>A thread that replies in minutes is believable in a prototype; the design needs a real service model behind it.</span></div></li>
+        <li><span class="n">05</span><div><b>Is the catalogue too small?</b><span>Nine pieces makes the editorial strong; it may make the collection feel thin to someone shopping for choice.</span></div></li>
+      </ul>
+
+      <aside class="aura-note">
+        <p class="mono">Project note</p>
+        <p>Aura Archive is a self-initiated concept, not a client project. The brand, collection, prices and boutiques are demonstration content made for the prototype; photography is credited to Pexels inside the file. No user research, interviews, usability tests or commercial results are claimed.</p>
+      </aside>
+
+      <div class="pj-cta">
+        <div>
+          <h2>The archive is clickable.</h2>
+          <p>Thirty screens, five flows, one prototype. Start at the cover, or jump straight into the collection.</p>
+        </div>
+        <div class="aura-cta-actions">
+          <a class="btn btn-ink" href="https://www.figma.com/proto/cx7qx7Fsg8hfzxcFAGoHhD/AURA-ARCHIVE?node-id=31-5182&amp;starting-point-node-id=31%3A5182&amp;page-id=0%3A1&amp;scaling=scale-down&amp;content-scaling=responsive" target="_blank" rel="noopener">Open the prototype <span aria-hidden="true">↗</span></a>
+          <a class="arrow-link arrow-link--quiet" href="index.html">Back to the overview <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <nav class="pj-pager" aria-label="Project navigation">
+        <a href="index.html"><span class="mono">Overview</span><strong>Aura Archive</strong></a>
+        <a href="../marque/index.html"><span class="mono">Next project</span><strong>Marque →</strong></a>
+      </nav>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-row mono">
+        <span>© <span id="year">2026</span> Ademola Peter Adeagbo</span>
+        <span>Lagos, Nigeria · Working globally</span>
+        <a href="../assets/Ademola-Adeagbo-CV.pdf" download>CV (PDF)</a>
+        <a href="#main">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="foot-name" aria-hidden="true"><span>Ademola</span><span>Adeagbo</span></div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
+
