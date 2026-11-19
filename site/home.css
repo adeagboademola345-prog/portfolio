@@ -287,6 +287,15 @@ ul, ol, dl, dd { margin: 0; padding: 0; list-style: none; }
 .ft-cta i { font-style: normal; transition: transform .35s var(--ease); }
 .ft:hover .ft-cta i { transform: translateX(4px); }
 
+.ft-wide { grid-column: 1 / -1; min-height: 560px; }
+.ft-wide .dk { position: absolute; height: auto; border-radius: 12px; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 40px 90px -20px rgba(0,0,0,.75); transition: transform .9s var(--ease); }
+.ft-wide .dk-front { width: 52%; right: 6%; top: 15%; z-index: 2; transform: rotate(-2deg); }
+.ft-wide .dk-back { width: 44%; right: 2%; top: 5%; z-index: 1; opacity: .9; transform: rotate(3deg); }
+.ft-wide:hover .dk-front { transform: rotate(-1deg) translateY(-10px); }
+.ft-wide .ft-info { max-width: 38%; }
+.ft-wide::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(to right, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 38%, transparent 55%); pointer-events: none; }
+.ft-wide .ft-title { font-size: clamp(3rem, 5vw, 4.6rem); }
+.ft-wide .ft-meta span.hl { background: #f5b800; border-color: #f5b800; color: #1a1a17; }
 .more-label { margin: clamp(48px, 6vw, 72px) 0 20px; font-size: .72rem; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--ink-3); }
 .more { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 20px; }
 .early { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
@@ -511,6 +520,10 @@ ul, ol, dl, dd { margin: 0; padding: 0; list-style: none; }
   .ft .ph-back, .ft-big .ph-back { width: 42%; right: 6%; left: auto; top: 9%; }
   .ft-info, .ft-big .ft-info { max-width: none; }
   .ft:not(.ft-big)::before { display: none; }
+  .ft-wide { min-height: 560px; }
+  .ft-wide .dk-front { width: 78%; right: auto; left: 6%; top: 18%; }
+  .ft-wide .dk-back { width: 70%; right: 4%; top: 6%; }
+  .ft-wide .ft-info { max-width: none; }
   .ft-photo::after { background: linear-gradient(to top, rgba(4,16,11,.96) 0%, rgba(4,16,11,.8) 45%, transparent 78%); }
   .more { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
   .early { grid-template-columns: 1fr; }

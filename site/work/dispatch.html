@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dispatch — An operations dashboard for delivery in Lagos · Ademola Adeagbo</title>
+  <meta name="description" content="Dispatch is a concept operations dashboard for delivery companies in Lagos: live riders, late orders, cash and complaints on one screen. A case study in decisions, a design system, prototyping and developer handoff by Ademola Adeagbo.">
+  <meta name="author" content="Ademola Peter Adeagbo">
+  <meta name="theme-color" content="#1a1a17">
+  <link rel="canonical" href="https://www.ademolaadeagbo.com.ng/work/dispatch">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ademolaadeagbo.com.ng/work/dispatch">
+  <meta property="og:title" content="Dispatch — One screen for every rider, every order">
+  <meta property="og:description" content="An operations dashboard for delivery companies in Lagos, built as a full Figma file with every state and every tap prototyped.">
+  <meta property="og:image" content="https://www.ademolaadeagbo.com.ng/assets/projects/dispatch/overview.webp">
+  <meta property="og:site_name" content="Ademola Peter Adeagbo">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dispatch.css?v=1">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-in">
+      <a class="back" href="../index.html#work"><span aria-hidden="true">←</span> Ademola Adeagbo</a>
+      <a class="btn btn-yellow btn-sm" href="https://www.figma.com/proto/6fywJam3iZnKH14KLLPHkK/Dispatch?node-id=4-831&amp;page-id=4%3A607&amp;starting-point-node-id=4%3A807&amp;scaling=scale-down&amp;content-scaling=responsive" target="_blank" rel="noopener">Open prototype ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1 · Hero -->
+    <section class="sec dark hero">
+      <div class="wrap">
+        <span class="bar" aria-hidden="true"></span>
+        <p class="word">dispatch</p>
+        <p class="eyebrow">Case study · self-initiated concept</p>
+        <h1>One screen for every rider, every order.</h1>
+        <p class="lead">An operations dashboard for delivery companies in Lagos. Built as a full Figma file, with every state and every tap prototyped.</p>
+        <dl class="meta">
+          <div><dt>Role</dt><dd>UI/UX designer, solo</dd></div>
+          <div><dt>Platform</dt><dd>Desktop web, 1440 × 960</dd></div>
+          <div><dt>Tools</dt><dd>Figma, custom Figma plugin</dd></div>
+          <div><dt>Sample client</dt><dd>Kobo Couriers, 48 riders</dd></div>
+        </dl>
+        <figure class="shot big"><img src="../assets/projects/dispatch/overview.webp" alt="Dispatch overview: orders today, on-time rate, late orders, cash to collect, orders by hour, riders right now and orders that need attention" width="1440" height="960"></figure>
+      </div>
+    </section>
+
+    <!-- 2 · Brief -->
+    <section class="sec paper">
+      <div class="wrap">
+        <p class="eyebrow">The brief I set</p>
+        <h2 class="h-lg">A dispatcher has seconds, not minutes.</h2>
+        <div class="copy">
+          <p class="muted">I wanted to design a dashboard someone runs a business from, not a gallery of charts. Delivery in Lagos gave me a real world to design for: riders on the road, orders running late, cash collected on delivery and customers calling to complain.</p>
+          <p>This is a concept. I have not interviewed dispatchers yet, so the questions below are my own working assumptions. I designed every screen to answer one of them quickly. All names, orders and amounts in the screens are sample data.</p>
+        </div>
+        <ol class="qs">
+          <li><span>Question 1</span><b>What is late right now?</b><p>Overview puts late orders above the fold, with minutes late in plain text.</p></li>
+          <li><span>Question 2</span><b>Where is each rider?</b><p>Live map pairs a rider list with the map, so a name and a pin are one tap apart.</p></li>
+          <li><span>Question 3</span><b>Who is holding cash?</b><p>Payouts separates pay runs from cash riders still owe.</p></li>
+          <li><span>Question 4</span><b>Who is unhappy?</b><p>Complaints sit in the sidebar with a live count, next to Orders.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3 · Colour -->
+    <section class="sec white">
+      <div class="wrap">
+        <p class="eyebrow">Decision 1 · Colour</p>
+        <h2 class="h-lg">Lagos already has a brand colour on the road.</h2>
+        <div class="copy">
+          <p class="muted">My first version was navy and crimson. It looked like every other SaaS dashboard, and I could swap the logo for any company's.</p>
+          <p>I replaced it with danfo yellow and charcoal. Yellow is used only where attention should land: the primary button, the peak hour in a chart, the selected rider. Everything else stays neutral, so yellow means something.</p>
+        </div>
+        <figure class="shot photo"><img src="../assets/projects/dispatch/danfo-photo.jpg" alt="Yellow danfo buses in Lagos traffic" width="801" height="284" loading="lazy"><figcaption>Photo: yellow danfo buses in Lagos traffic</figcaption></figure>
+        <div class="pair">
+          <figure class="shot"><span class="tag red">Before</span><img src="../assets/projects/dispatch/before.jpg" alt="First version of the overview in navy and crimson" width="389" height="253" loading="lazy"><figcaption>Navy and crimson</figcaption></figure>
+          <figure class="shot"><span class="tag green">After</span><img src="../assets/projects/dispatch/after.jpg" alt="Final overview in danfo yellow and charcoal" width="389" height="253" loading="lazy"><figcaption>Danfo yellow and charcoal</figcaption></figure>
+        </div>
+        <ul class="swatches">
+          <li><i style="background:#F5B800"></i><b>Danfo</b><code>#F5B800</code></li>
+          <li><i style="background:#1A1A17"></i><b>Charcoal</b><code>#1A1A17</code></li>
+          <li><i style="background:#F3F1EA"></i><b>Paper</b><code>#F3F1EA</code></li>
+          <li><i style="background:#E4E0D6"></i><b>Line</b><code>#E4E0D6</code></li>
+          <li><i style="background:#1E7F4F"></i><b>Success</b><code>#1E7F4F</code></li>
+          <li><i style="background:#B45309"></i><b>Warning</b><code>#B45309</code></li>
+          <li><i style="background:#D92D20"></i><b>Error</b><code>#D92D20</code></li>
+          <li><i style="background:#2D5BA8"></i><b>Info</b><code>#2D5BA8</code></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 · Live map -->
+    <section class="sec paper">
+      <div class="wrap">
+        <p class="eyebrow">Decision 2 · Live map</p>
+        <h2 class="h-md">Find the rider, then act.</h2>
+        <div class="copy">
+          <p class="muted">Select a rider and a card opens with their current order, how late it is and two buttons: view the order or reassign it.</p>
+          <p class="muted">Filters (On delivery, Idle, Offline) show their counts, so the list answers "how many are free?" before anyone scrolls.</p>
+        </div>
+        <figure class="shot big"><img src="../assets/projects/dispatch/live-map.webp" alt="Live map with a rider list on the left and a selected rider's card on the map" width="1440" height="960" loading="lazy"><figcaption>Live map, a rider selected</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 5 · Order detail -->
+    <section class="sec white">
+      <div class="wrap">
+        <p class="eyebrow">Decision 3 · Order detail</p>
+        <h2 class="h-md">Tell the dispatcher what to do next.</h2>
+        <div class="copy">
+          <p class="muted">When an order is late, the page opens with a yellow banner in plain words: the rider is 25 minutes late and has not moved for 9 minutes. Reassign or call them.</p>
+          <p>The primary action is the yellow button. Calling the rider and cancelling sit below it as quieter options. Reassigning opens a short list of nearby riders with distance and rating, then a confirmation, then a success state.</p>
+        </div>
+        <div class="pair">
+          <figure class="shot"><img src="../assets/projects/dispatch/order-late.jpg" alt="Late order with the banner and the primary action" width="389" height="257" loading="lazy"><figcaption>Late order, with the banner and the primary action</figcaption></figure>
+          <figure class="shot"><img src="../assets/projects/dispatch/order-reassign.jpg" alt="Reassign dialog with a nearby rider chosen" width="389" height="257" loading="lazy"><figcaption>Reassign, a nearby rider chosen</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Lists and people -->
+    <section class="sec paper">
+      <div class="wrap">
+        <p class="eyebrow">Decision 4 · Lists and people</p>
+        <h2 class="h-md">Tables for work, profiles for people.</h2>
+        <div class="pair">
+          <figure class="shot"><img src="../assets/projects/dispatch/orders.jpg" alt="Orders table" width="389" height="257" loading="lazy"><figcaption>Orders: status chips, rider avatars, a count on every filter tab</figcaption></figure>
+          <figure class="shot"><img src="../assets/projects/dispatch/rider-profile.jpg" alt="Rider profile" width="389" height="257" loading="lazy"><figcaption>Rider profile: deliveries, on-time rate, rating and cash in hand</figcaption></figure>
+          <figure class="shot"><img src="../assets/projects/dispatch/shifts.jpg" alt="Shifts calendar" width="389" height="257" loading="lazy"><figcaption>Shifts calendar. The arrows move between weeks.</figcaption></figure>
+          <figure class="shot"><img src="../assets/projects/dispatch/payouts.jpg" alt="Payouts" width="389" height="257" loading="lazy"><figcaption>Payouts: next pay run, paid this month, cash shortfall</figcaption></figure>
+          <figure class="shot"><img src="../assets/projects/dispatch/reports.jpg" alt="Reports" width="389" height="257" loading="lazy"><figcaption>Reports: this week against last week</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · Numbers -->
+    <section class="sec white">
+      <div class="wrap">
+        <p class="eyebrow">Decision 5 · Reading numbers</p>
+        <h2 class="h-md">Every number says what changed.</h2>
+        <div class="copy">
+          <p class="muted">Each KPI carries its change next to it, such as "+8% vs last Fri" or "−3 pts", with colour only on what is worse or better.</p>
+          <p>Charts use charcoal as the base and yellow for the one bar or line that matters. Axes and gridlines stay quiet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · System -->
+    <section class="sec paper">
+      <div class="wrap">
+        <p class="eyebrow">System</p>
+        <h2 class="h-lg">One typeface, one accent, a small kit.</h2>
+        <div class="copy">
+          <p class="muted">Figtree for everything people read. A monospaced face for order IDs such as DSP-20480, so they are easy to compare and copy.</p>
+          <p>Buttons exist in five states: default, hover, pressed, disabled and loading. Toggles, checkboxes and the star that pins a rider are interactive components in the prototype.</p>
+        </div>
+        <div class="pair type">
+          <div class="card"><span class="aa">Aa</span><b>Figtree, 400 to 800</b></div>
+          <div class="card"><span class="mono">DSP-20480</span><b>JetBrains Mono, order IDs</b></div>
+        </div>
+        <figure class="shot photo"><img src="../assets/projects/dispatch/wrong-password.jpg" alt="Log in screen showing a wrong password error with the number of tries left" width="801" height="327" loading="lazy"><figcaption>Even the error states are designed. This is wrong password, with the number of tries left.</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 9 · The file -->
+    <section class="sec dark">
+      <div class="wrap">
+        <p class="eyebrow">The file</p>
+        <h2 class="h-lg">Built to be clicked, not just looked at.</h2>
+        <dl class="stats">
+          <div><dt>482</dt><dd>screens and states</dd></div>
+          <div><dt>12</dt><dd>flows with start points</dd></div>
+          <div><dt>137</dt><dd>components</dd></div>
+          <div><dt>23</dt><dd>component sets</dd></div>
+          <div><dt>0</dt><dd>tappable items without a link in my final check</dd></div>
+        </dl>
+        <ul class="chips">
+          <li>Log in</li><li>Overview</li><li>Live map</li><li>Orders</li><li>New order</li><li>Riders</li><li>Payouts and cash</li><li>Complaints</li><li>Reports</li><li>Settings</li><li>New workspace (empty)</li><li>Offline</li>
+        </ul>
+        <p class="copy-dark">The file also has the full structure: Get Started, Dev Handoff, Inspect, Design System (Foundation, Component, Patterns), Usability Testing / Prototype, Archive, Portfolio and Trash.</p>
+        <a class="btn btn-yellow" href="https://www.figma.com/proto/6fywJam3iZnKH14KLLPHkK/Dispatch?node-id=4-831&amp;page-id=4%3A607&amp;starting-point-node-id=4%3A807&amp;scaling=scale-down&amp;content-scaling=responsive" target="_blank" rel="noopener">Click through the prototype ↗</a>
+      </div>
+    </section>
+
+    <!-- 10 · Next -->
+    <section class="sec paper">
+      <div class="wrap">
+        <p class="eyebrow">What I would do next</p>
+        <h2 class="h-md">Put it in front of real dispatchers.</h2>
+        <p class="copy muted">Everything here rests on my own assumptions. The next step is to test them.</p>
+        <ul class="next">
+          <li><span class="pill">Test</span><p>Run the usability test plan that is already in the file, with people who dispatch deliveries.</p></li>
+          <li><span class="pill">Ask</span><p>Check whether the four questions are the right ones, and what I missed.</p></li>
+          <li><span class="pill">Build</span><p>Design the rider's phone app, since the dashboard depends on what riders send back.</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sec dark foot">
+    <div class="wrap foot-in">
+      <p>Dispatch is a self-initiated concept by Ademola Adeagbo. Kobo Couriers, all riders, orders and amounts are sample data.</p>
+      <a class="back" href="../index.html#work"><span aria-hidden="true">←</span> Back to all work</a>
+    </div>
+  </footer>
+</body>
+</html>
